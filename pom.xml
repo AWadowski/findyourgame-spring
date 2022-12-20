@@ -11,6 +11,9 @@
 		<module>databases-api</module>
 		<module>databases-domain</module>
 		<module>databases-application</module>
+		<module>databases-api</module>
+		<module>databases-application</module>
+		<module>databases-domain</module>
 	</modules>
 
 	<name>databases</name>
