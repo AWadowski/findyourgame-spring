@@ -11,7 +11,11 @@
 
     <artifactId>databases-application</artifactId>
     <dependencies>
-
+        <dependency>
+            <groupId>com.google.firebase</groupId>
+            <artifactId>firebase-admin</artifactId>
+            <version>6.10.0</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
