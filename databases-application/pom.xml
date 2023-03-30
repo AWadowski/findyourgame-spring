@@ -23,6 +23,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.google.firebase</groupId>
+            <artifactId>firebase-admin</artifactId>
+            <version>8.0.1</version>
+        </dependency>
+
     </dependencies>
     <properties>
         <start-class>org.example.Main</start-class>
