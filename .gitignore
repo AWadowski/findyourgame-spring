@@ -10,6 +10,10 @@
 .springBeans
 .sts4-cache
 
+# Ignore target folders
+target/
+*/target/
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
