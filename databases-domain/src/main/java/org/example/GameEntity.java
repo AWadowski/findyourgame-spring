@@ -9,9 +9,10 @@ import java.time.LocalDateTime;
 public class GameEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "c##adam.games_list_id_seq")
-
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "games_list_id_seq")
+    @SequenceGenerator(name = "games_list_id_seq", sequenceName = "games_list_id_seq", allocationSize = 1)
     private Long id;
+
     private String gameType;
     private String gameName;
     private boolean multiplayer;

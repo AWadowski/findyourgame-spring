@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.UUID;
 
 public class FirebaseUploader {
-    private final FirebaseConfig firebaseConfig;
+/*    private final FirebaseConfig firebaseConfig;
 
     public FirebaseUploader(FirebaseConfig firebaseConfig) {
         this.firebaseConfig = firebaseConfig;
@@ -45,5 +45,5 @@ public class FirebaseUploader {
         data.put("contentType", "image/jpeg");
         data.put("downloadUrl", downloadUrl);
         ref.child(key).setValueAsync(data);
-    }
+    }*/
 }

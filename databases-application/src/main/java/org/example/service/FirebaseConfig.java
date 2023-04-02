@@ -14,10 +14,10 @@ import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.io.InputStream;
 
-@Configuration
+//@Configuration
 public class FirebaseConfig {
 
-    private Storage storage;
+/*    private Storage storage;
     private String defaultBucketName;
 
     @PostConstruct
@@ -43,6 +43,6 @@ public class FirebaseConfig {
     }
     public String getDefaultBucketName() {
         return defaultBucketName;
-    }
+    }*/
 }
 
