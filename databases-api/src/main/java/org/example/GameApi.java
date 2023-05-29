@@ -1,18 +1,21 @@
 package org.example;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 
 import java.time.LocalDateTime;
 
+@Data
 @AllArgsConstructor
 public class GameApi {
+    private String gameName;
     private String gameType;
-    private boolean multiplayer;
+    private TakNieEnum multiplayer;
     private String platform;
     private Long age;
     private String wydawca;
     private LocalDateTime dateOfOut;
-    private boolean transactions;
+    private TakNieEnum transactions;
     private String motyw;
 
 }

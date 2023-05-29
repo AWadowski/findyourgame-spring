@@ -9,10 +9,10 @@ import java.util.List;
 @Repository
 public interface GameRepository extends CrudRepository<GameEntity, Long> {
 
-    @Query("SELECT g FROM GameEntity g WHERE g.multiplayer = true")
+    @Query("SELECT g FROM GameEntity g WHERE g.multiplayer = 'true'")
     List<GameEntity> findAllMultiplayerGames();
 
-    @Query("SELECT g FROM GameEntity g WHERE g.platform = ?1")
+    @Query("SELECT g FROM GameEntity g WHERE g.platform = :platform")
     List<GameEntity> findByPlatform(String platform);
 
     @Query(value = "SELECT * FROM games_list WHERE game_type = :gameType", nativeQuery = true)
