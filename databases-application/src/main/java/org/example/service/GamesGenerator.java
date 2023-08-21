@@ -36,11 +36,11 @@ public class GamesGenerator {
             "XBOX Series X",
             "PlayStation 4",
             "PlayStation 5",
-            "Nintendo Switch",
-            "Google Stadia",
-            "Mobile (iOS & Android)",
-            "VR Platforms",
-            "Steam Deck"
+            "Nintendo",
+            "Google",
+            "Mobile",
+            "VR",
+            "Steam"
     };
     private static final String[] WYDAWCAS = {
             "Electronic Arts",
@@ -191,6 +191,7 @@ public class GamesGenerator {
                     "Tak",
                     MOTYWS[RANDOM.nextInt(MOTYWS.length)],
                     generateRandomString(1000)
+                    ,0L
             );
             gameApi = gameConverter.fromEntity(gameRepository.save(gameConverter.toEntity(gameApi)));
             firebaseConfig.addToFirebase(firebaseConverter.toEntity(gameApi));

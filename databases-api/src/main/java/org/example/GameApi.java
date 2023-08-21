@@ -21,4 +21,5 @@ public class GameApi {
     private String transactions;
     private String motyw;
     private String description;
+    private Long ranking;
 }

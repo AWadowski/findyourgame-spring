@@ -1,6 +1,7 @@
 package org.example.service;
 
 
+import com.google.api.gax.rpc.InternalException;
 import lombok.AllArgsConstructor;
 import org.example.*;
 import org.springframework.scheduling.annotation.Async;
@@ -17,6 +18,8 @@ public class GamesService {
     private final GameConverter gameConverter;
     private final FirebaseConfig firebaseConfig;
     private final SearchingRepository searchingRepository;
+    private final FirebaseConverter firebaseConverter;
+
     public List<GameApi> findAllMultiplayerGames() {
         return gameConverter.fromEntityList(gameRepository.findAllMultiplayerGames());
     }
@@ -52,6 +55,7 @@ public class GamesService {
             }
             return findByCriteria(criteria);
         }
+        results.sort((o1, o2) -> o2.getRanking().compareTo(o1.getRanking()));
         return results.subList(0,3);
     }
 
@@ -101,5 +105,11 @@ public class GamesService {
         long duration = (endTime - startTime);
         searchingEntity.setSearchingTime(String.valueOf(duration/1_000));
         searchingRepository.save(searchingEntity);
+    }
+
+    public void changeRanking(Long id, Long ranking){
+        GameEntity gameEntity = gameRepository.findById(id).orElseThrow(() -> new RuntimeException("Nie znaleziono gry o podanym id"));
+        gameEntity.setRanking(ranking);
+        gameRepository.save(gameEntity);
     }
 }

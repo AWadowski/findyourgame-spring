@@ -21,4 +21,5 @@ public class FireBaseApi {
     private String dateOfOut;
     private String transactions;
     private String motyw;
+    private Long ranking;
 }

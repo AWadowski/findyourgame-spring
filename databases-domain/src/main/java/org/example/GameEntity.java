@@ -32,4 +32,5 @@ public class GameEntity {
     private String transactions;
     private String motyw;
     private String description;
+    private Long ranking;
 }

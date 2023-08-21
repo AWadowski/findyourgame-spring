@@ -20,6 +20,7 @@ public class FirebaseConverter {
                     .dateOfOut(api.getDateOfOut().toString())
                     .transactions(api.getTransactions())
                     .motyw(api.getMotyw())
+                    .ranking(api.getRanking())
                     .build();
         }
 }

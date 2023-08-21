@@ -1,6 +1,7 @@
 package org.example.controller;
 
 import lombok.AllArgsConstructor;
+import oracle.jdbc.proxy.annotation.Post;
 import org.example.GameApi;
 import org.example.GameEntity;
 import org.example.GameRepository;
@@ -19,7 +20,6 @@ public class GameController {
 
     private final GamesService gameService;
     private final GamesGenerator gamesGenerator;
-    private final GameConverter gameConverter;
 
 
     @PostMapping("/findByCriteria")
@@ -27,24 +27,14 @@ public class GameController {
         return gameService.findByCriteria(gameApi);
     }
 
-    @GetMapping("/multiplayer")
-    public List<GameApi> getAllMultiplayerGames() {
-        return gameService.findAllMultiplayerGames();
-    }
-
-    @GetMapping("/platform/{platform}")
-    public List<GameApi> getGamesByPlatform(@PathVariable String platform) {
-        return gameService.findByPlatform(platform);
-    }
-
-    @GetMapping("/type/{gameType}")
-    public List<GameApi> getGamesByGameType(@PathVariable String gameType) {
-        return gameService.findByGameType(gameType);
-    }
-
     @PostMapping
     public void addGame(){
         gamesGenerator.generateAndSaveGames();
+    }
+
+    @PutMapping("/changeRanking/{id}/{ranking}")
+    public void changeRanking(@PathVariable Long id, @PathVariable Long ranking){
+        gameService.changeRanking(id,ranking);
     }
 }
 

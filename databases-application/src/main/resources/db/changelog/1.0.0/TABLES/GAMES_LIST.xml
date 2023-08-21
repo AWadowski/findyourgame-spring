@@ -65,4 +65,15 @@
         </addColumn>
     </changeSet>
 
+    <changeSet id="GAMES_LIST_add_ranking-1" author="adam.wadowski">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists columnName="ranking" tableName="GAMES_LIST"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="GAMES_LIST">
+            <column name="ranking" remarks="ranking" type="number"></column>
+        </addColumn>
+    </changeSet>
+
 </databaseChangeLog>

@@ -28,6 +28,7 @@ public class GameConverter {
                 .transactions(api.getTransactions())
                 .motyw(api.getMotyw())
                 .description(api.getDescription())
+                .ranking(api.getRanking())
                 .build();
     }
 
@@ -44,6 +45,7 @@ public class GameConverter {
                 .transactions(entity.getTransactions())
                 .motyw(entity.getMotyw())
                 .description(entity.getDescription())
+                .ranking(entity.getRanking())
                 .build();
     }
 
