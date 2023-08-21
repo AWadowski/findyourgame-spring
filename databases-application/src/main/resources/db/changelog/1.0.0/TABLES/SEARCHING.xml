@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="SEARCHING_TABLE_SEQ" author="adam.wadowski">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <sequenceExists sequenceName="SEARCHING_TABLE_ID_SEQ"/>
+            </not>
+        </preConditions>
+        <createSequence sequenceName="SEARCHING_TABLE_ID_SEQ" startValue="1"/>
+    </changeSet>
+    <changeSet id="SEARCHING_TABLE" author="adam.wadowski">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="SEARCHING"/>
+            </not>
+        </preConditions>
+        <createTable tableName="SEARCHING">
+            <column name="id" type="number">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="searching_type" type="varchar2(255)" remarks="typ wyszukiwania oracle/firebase">
+            </column>
+            <column name="searching_time" type="varchar2(255)">
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

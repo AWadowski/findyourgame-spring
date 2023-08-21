@@ -6,10 +6,11 @@ import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDate;
 
+
 @Data
 @AllArgsConstructor
 @SuperBuilder
-public class GameApi {
+public class FireBaseApi {
     private Long id;
     private String gameName;
     private String gameType;
@@ -17,8 +18,7 @@ public class GameApi {
     private String platform;
     private Long age;
     private String wydawca;
-    private LocalDate dateOfOut;
+    private String dateOfOut;
     private String transactions;
     private String motyw;
-    private String description;
 }

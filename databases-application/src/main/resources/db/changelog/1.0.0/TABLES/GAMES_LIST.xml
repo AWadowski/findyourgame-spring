@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <changeSet id="GAMES_LIST_TABLE" author="author_name">
+    <changeSet id="GAMES_LIST_TABLE" author="adam.wadowski">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="games_list"/>
@@ -45,13 +45,24 @@
         </createTable>
     </changeSet>
 
-    <changeSet id="GAMES_LIST_SEQ" author="author_name">
+    <changeSet id="GAMES_LIST_SEQ" author="adam.wadowski">
         <preConditions onFail="MARK_RAN">
             <not>
                 <sequenceExists sequenceName="games_list_id_seq"/>
             </not>
         </preConditions>
         <createSequence sequenceName="games_list_id_seq" startValue="1"/>
+    </changeSet>
+
+    <changeSet id="GAMES_LIST_add_description-1" author="adam.wadowski">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists columnName="DESCRIPTION" tableName="GAMES_LIST"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="GAMES_LIST">
+            <column name="DESCRIPTION" remarks="opis" type="VARCHAR(1500)"></column>
+        </addColumn>
     </changeSet>
 
 </databaseChangeLog>
