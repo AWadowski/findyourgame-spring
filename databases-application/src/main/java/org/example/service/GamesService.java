@@ -1,7 +1,6 @@
 package org.example.service;
 
 
-import com.google.api.gax.rpc.InternalException;
 import lombok.AllArgsConstructor;
 import org.example.*;
 import org.springframework.scheduling.annotation.Async;
@@ -18,19 +17,7 @@ public class GamesService {
     private final GameConverter gameConverter;
     private final FirebaseConfig firebaseConfig;
     private final SearchingRepository searchingRepository;
-    private final FirebaseConverter firebaseConverter;
 
-    public List<GameApi> findAllMultiplayerGames() {
-        return gameConverter.fromEntityList(gameRepository.findAllMultiplayerGames());
-    }
-
-    public List<GameApi> findByPlatform(String platform) {
-        return gameConverter.fromEntityList(gameRepository.findByPlatform(platform));
-    }
-
-    public List<GameApi> findByGameType(String gameType) {
-        return gameConverter.fromEntityList(gameRepository.findByGameType(gameType));
-    }
 
     public List<GameApi> findByCriteria(GameApi criteria) {
         List<GameApi> results = findByCriteriaInternal(criteria);
