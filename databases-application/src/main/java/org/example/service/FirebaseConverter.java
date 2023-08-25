@@ -21,6 +21,7 @@ public class FirebaseConverter {
                     .transactions(api.getTransactions())
                     .motyw(api.getMotyw())
                     .ranking(api.getRanking())
+                    .description(api.getDescription())
                     .build();
         }
 }
