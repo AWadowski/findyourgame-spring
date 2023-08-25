@@ -2,11 +2,34 @@
 \contentsline {chapter}{Wstęp}{1}{}%
 \contentsline {chapter}{\numberline {1}Tworzenie aplikacji webowej}{3}{}%
 \contentsline {section}{\numberline {1.1}Problem wyboru technologii}{3}{}%
+\contentsline {subsection}{\numberline {1.1.1}Popularne języki i narzędzia}{3}{}%
+\contentsline {subsection}{\numberline {1.1.2}Interakcja z użytkownikiem}{3}{}%
+\contentsline {subsection}{\numberline {1.1.3}Bazy danych w aplikacjach webowych}{3}{}%
 \contentsline {section}{\numberline {1.2}Projektowanie aplikacji}{4}{}%
-\contentsline {chapter}{\numberline {2}Integracja z aplikacją webową}{5}{}%
-\contentsline {section}{\numberline {2.1}Sekcja}{5}{}%
-\contentsline {subsection}{\numberline {2.1.1}Podsekcja}{5}{}%
-\contentsline {chapter}{\numberline {3}Zbieranie danych badawczych}{7}{}%
-\contentsline {section}{\numberline {3.1}Sekcja}{7}{}%
-\contentsline {subsection}{\numberline {3.1.1}Podsekcja}{7}{}%
-\contentsline {chapter}{Podsumowanie}{9}{}%
+\contentsline {subsection}{\numberline {1.2.1}Etap planowania i analizy}{4}{}%
+\contentsline {subsection}{\numberline {1.2.2}Projektowanie UX/UI}{4}{}%
+\contentsline {subsection}{\numberline {1.2.3}Tworzenie aplikacji}{4}{}%
+\contentsline {subsection}{\numberline {1.2.4}Testowanie}{4}{}%
+\contentsline {subsection}{\numberline {1.2.5}Wdrożenie}{4}{}%
+\contentsline {subsection}{\numberline {1.2.6}Utrzymanie i rozwój}{5}{}%
+\contentsline {section}{\numberline {1.3}Budowa aplikacji webowej}{5}{}%
+\contentsline {subsection}{\numberline {1.3.1}Frontend}{5}{}%
+\contentsline {subsection}{\numberline {1.3.2}Backend}{5}{}%
+\contentsline {subsection}{\numberline {1.3.3}Proces tworzenia}{5}{}%
+\contentsline {section}{\numberline {1.4}Optymalizacja i bezpieczeństwo aplikacji webowej}{5}{}%
+\contentsline {subsection}{\numberline {1.4.1}Optymalizacja}{6}{}%
+\contentsline {subsection}{\numberline {1.4.2}Bezpieczeństwo}{6}{}%
+\contentsline {subsection}{\numberline {1.4.3}Monitoring i aktualizacje}{6}{}%
+\contentsline {section}{\numberline {1.5}Integracja z innymi narzędziami i serwisami}{6}{}%
+\contentsline {subsection}{\numberline {1.5.1}API - klucz do integracji}{6}{}%
+\contentsline {subsection}{\numberline {1.5.2}Popularne integracje}{6}{}%
+\contentsline {subsection}{\numberline {1.5.3}Wyzwania związane z integracją}{7}{}%
+\contentsline {chapter}{\numberline {2}Technologie wykorzystane w aplikacji webowej}{9}{}%
+\contentsline {section}{\numberline {2.1}Sekcja}{9}{}%
+\contentsline {subsection}{\numberline {2.1.1}Podsekcja}{9}{}%
+\contentsline {chapter}{\numberline {3}Zbieranie danych badawczych}{11}{}%
+\contentsline {section}{\numberline {3.1}Sekcja}{11}{}%
+\contentsline {subsection}{\numberline {3.1.1}Podsekcja}{11}{}%
+\contentsline {chapter}{\numberline {4}Porównanie wydajności baz relacyjnych i nierelacyjnych}{13}{}%
+\contentsline {section}{\numberline {4.1}Sekcja}{13}{}%
+\contentsline {chapter}{Podsumowanie}{15}{}%

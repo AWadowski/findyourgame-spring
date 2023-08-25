@@ -1,17 +1,122 @@
 \chapter{Tworzenie aplikacji webowej}
 
 \section{Problem wyboru technologii}
-	Wielu programistów podczas tworzenia nowej aplikacji, zastanawia się na początku jaki język programowania wybrać, aby rozwiązać problem jak najlepiej. Obecnie do tworzenia aplikacji webowych używamy wiele technologii takich jak najpopularniejszy JavaScript, HTML/CSS, Python, SQL oraz Java. Aby przełożyć kod na coś widocznego, potrzebujemy kompilatora, który różni się w zależności od używanego języka. Dla przykładu używając języka Java naszym kompilatorem będzie javac. Korzystając z języka jakim jest Java, możemy używać wielu frameworków. Do stworzenia aplikacji internetowej najbardziej popularnym wyborem wśród programistów jest Spring Boot. Głównym powodem wyboru wyżej wymienionego narzędzia jest szybkość budowania aplikacji, w kilka minut możemy wygenerować działającą aplikację i opublikować ją na prywatnym serwerze. Wraz z szybkością idą: obszerna i ogólnodostępna dokumentacja, która potrafi poprowadzić krok po kroku nawet największego laika, możliwość prostego testowania oraz modularyzacja naszego projektu, dzięki której możemy w łatwy sposób zmieniać zależności dla konkretnego kontekstu.
-	
-Przy tworzeniu aplikacji webowej, język Java, służy nam jedynie do wystawienia tzw. kontrolerów, które pod określonym adresem kryją swoje funkcjonalności. Do odczytu oraz użycia takiego kontrolera potrzebny nam drugi język programowania, który stworzy widok dla danych pobranych z konkretnej ścieżki. Najpopularniejszym językiem stosowanym w tym momencie do współpracy z Javą jest Angular, który jest prężnie rozwijany przez firmę Google. Jest to framework napisany w języku TypeScript, którego zaletami są między innymi szybkość użycia, wydajność oraz właśnie wymieniona wyżej budowa z TypeScriptu. Pisanie w tym frameworku, polega głównie na tworzeniu komponentów, które są modyfikowane zależnie od danych oraz logiki programu. W ten sposób jesteśmy w stanie stworzyć stronę, która nie jest w stanie zbierać danych w żaden możliwy sposób, do gromadzenia danych potrzebujemy bazy.
 
-Bazy danych dzielą się na wiele kategorii. Z uwagi na miejsce inicjalizacji możemy rozmawiać o lokalnych bazach danych lub typu klient-serwer. W pierwszym rodzaju są to najprostsze zbiory, które są gromadzone na jednym komputerze, a wszelkie zmiany będzie nanosił użytkownik. Drugi rodzaj, który jest przechowywany w zasobach serwera, jest traktowany jako osobny komputer, dostęp do niego możemy uzyskać poprzez połączenie sieciowe. Ze względu na architekturę, wyróżniamy dwa typy: jednowarstwowe oraz dwuwarstwowe. Bazy jednowarstwowe wykonują zmiany od razu, w przeciwieństwie do drugiego typu, w którym połączenie z serwerem odbywa się za pomocą specjalnego sterownika, a kontrolowanie danych zależy od klienta. Ostatnim podziałem baz danych jest podział względem struktur danych, które używają. Jedne zwane prostymi lub kartotekowymi, określają każdą tablicę jako osobny dokument, przez co nie ma między nimi żadnego połączenia. Jedyną wspólną cechą tabel jest stosowanie ich w jednym wspólnym celu. Drugie zwane relacyjnymi bazami danych określają wiele tablic, które mogę się łączyć, ten typ posiada język programowania zwany SQL, który pozwala na tworzenie zaawansowanych funkcji obsługi danych. Wartości używane w tabelach powinny być oparte na prostych typach danych, tabele są dwuwymiarowe, mające zero lub więcej wierszy oraz minimum jedną kolumnę. Możliwe jest również porównywanie wartości w bazie, oraz ich wiązanie w celu wyświetlenia wielu danych dla jednego rekordu np. dla książki możemy wyświetlić jej zawartość ale również z innej tabeli możemy wyświetlić bibliotekę, w której się znajduje. Do takiej operacji potrzebujemy unikalnego kodu oraz relacji między tabelami. Trzecim typem są bazy obiektowe, które są zdefiniowane tylko jednym standardem z 1993 roku. Podstawowym celem tego modelu jest bezpośrednie odwzorowanie obiektów oraz powiązań między nimi występujących w aplikacji. Ostatnim typem są strumieniowe bazy danych, przedstawiają one dane w postaci zbioru strumieni. System zarządzania jest nazwany strumieniowym systemem zarządzania danymi(ang. Data Stream Management System). Jest to nowy typ, który znajduje się w fazie prototypowej, nie istnieją dla niego żadne rozwiązania komercyjne. 
-	
+Wielu programistów podczas tworzenia nowej aplikacji, zastanawia się na początku jaki język programowania wybrać, aby rozwiązać problem jak najlepiej. Obecnie do tworzenia aplikacji webowych używamy wiele technologii.
+
+\subsection{Popularne języki i narzędzia}
+
+Najpopularniejsze technologie to JavaScript, HTML/CSS, Python, SQL oraz Java. Aby przełożyć kod na coś widocznego, potrzebujemy kompilatora, który różni się w zależności od używanego języka. Dla przykładu używając języka Java naszym kompilatorem będzie \textit{javac}. Korzystając z języka jakim jest Java, możemy używać wielu frameworków. Do stworzenia aplikacji internetowej najbardziej popularnym wyborem wśród programistów jest Spring Boot. Głównym powodem wyboru wyżej wymienionego narzędzia jest szybkość budowania aplikacji. W kilka minut możemy wygenerować działającą aplikację i opublikować ją na prywatnym serwerze. Wraz z szybkością idą: obszerna i ogólnodostępna dokumentacja, która potrafi poprowadzić krok po kroku nawet największego laika, możliwość prostego testowania oraz modularyzacja naszego projektu, dzięki której możemy w łatwy sposób zmieniać zależności dla konkretnego kontekstu.
+
+\subsection{Interakcja z użytkownikiem}
+
+Przy tworzeniu aplikacji webowej język Java służy nam jedynie do wystawienia tzw. kontrolerów, które pod określonym adresem kryją swoje funkcjonalności. Do odczytu oraz użycia takiego kontrolera potrzebny nam drugi język programowania, który stworzy widok dla danych pobranych z konkretnej ścieżki. Najpopularniejszym językiem stosowanym w tym momencie do współpracy z Javą jest Angular, który jest prężnie rozwijany przez firmę Google. Jest to framework napisany w języku TypeScript, którego zaletami są między innymi szybkość użycia, wydajność oraz właśnie wymieniona wyżej budowa z TypeScript. Pisanie w tym frameworku polega głównie na tworzeniu komponentów, które są modyfikowane zależnie od danych oraz logiki programu.
+
+\subsection{Bazy danych w aplikacjach webowych}
+
+W ten sposób jesteśmy w stanie stworzyć stronę, która nie ma możliwości zbierania danych w żaden sposób, do gromadzenia danych potrzebujemy więc bazy. Bazy danych dzielą się na wiele kategorii. Z uwagi na miejsce inicjalizacji możemy rozmawiać o lokalnych bazach danych lub typu klient-serwer. W pierwszym rodzaju są to najprostsze zbiory, które są gromadzone na jednym komputerze, a wszelkie zmiany będzie nanosił użytkownik. Drugi rodzaj, który jest przechowywany w zasobach serwera, jest traktowany jako osobny komputer, dostęp do niego możemy uzyskać poprzez połączenie sieciowe. Ze względu na architekturę, wyróżniamy dwa typy: jednowarstwowe oraz dwuwarstwowe. Bazy jednowarstwowe wykonują zmiany od razu, w przeciwieństwie do drugiego typu, w którym połączenie z serwerem odbywa się za pomocą specjalnego sterownika, a kontrolowanie danych zależy od klienta. Ostatnim podziałem baz danych jest podział względem struktur danych, których używają. Jedne zwane prostymi lub kartotekowymi określają każdą tablicę jako osobny dokument, przez co nie ma między nimi żadnego połączenia. Drugie zwane relacyjnymi bazami danych określają wiele tablic, które mogą się łączyć. Na przykład dla książki możemy wyświetlić jej zawartość ale również z innej tabeli możemy wyświetlić bibliotekę, w której się znajduje. Do takiej operacji potrzebujemy unikalnego kodu oraz relacji między tabelami. Trzecim typem są bazy obiektowe, które są zdefiniowane tylko jednym standardem z 1993 roku. Ostatnim typem są strumieniowe bazy danych. Przedstawiają one dane w postaci zbioru strumieni. System zarządzania jest nazwany strumieniowym systemem zarządzania danymi (ang. Data Stream Management System). Jest to nowy typ, który znajduje się w fazie prototypowej i nie istnieją dla niego żadne rozwiązania komercyjne.
+
 \section{Projektowanie aplikacji}
+\subsection{Etap planowania i analizy}
 
-Każdą aplikację należy zaprojektować, ułatwia to nie tylko pisanie kodu w dalszej części, ale również organizację oraz wskazuje rozwiązania, które programista powinien używać w pracy nad oprogramowaniem. Planowanie budowy powinniśmy podzielić na sześć konkretnych etapów, aby doprowadzić projekt do finalnej wersji oraz wspierać jego rozwój i utrzymanie. 
+W fazie planowania i analizy kluczową rolę odgrywają analitycy, którzy spotykają się z klientem w celu omówienia kluczowych aspektów projektu. W tym czasie omawiane są oczekiwane funkcjonalności, wymagania oraz oczekiwania względem wydajności aplikacji. Jest to etap, w którym zbierane są wszystkie niezbędne informacje, które będą potrzebne w kolejnych fazach projektu. Nawet jeśli tworzymy aplikację na własne potrzeby, warto poświęcić czas na dokładne zrozumienie i zdefiniowanie tych trzech kluczowych punktów. Zapisanie ich pomoże w późniejszym etapie projektowania i implementacji. Na koniec tej fazy powstaje ogólny zarys projektu, który będzie służył jako drogowskaz w kolejnych etapach.
 
-Pierwszą fazą jest czas planowania i analizy. W tej fazie analitycy spotykają się z klientem i rozmawiają na temat oczekiwanych funkcjonalności, wymagań oraz oczekiwań względem wydajności. Jeśli tworzymy aplikację samodzielnie w celach własnych, również należy zastanowić się chwilę nad tymi trzema punktami, a także zapisać je w celu użycia w kolejnych fazach budowy projektu. Powstaje w ten sposób ogólny zarys projektu, Druga faza skupia się na projektowaniu UX/UI, co oznacza przygotowanie projektu oprogramowania z uwzględnieniem specyfikacji z fazy pierwszej. Pomaga to przede wszystkim w ustaleniu funkcjonalności oraz określeniu wyglądu aplikacji, czyli interfejsu użytkownika. Najważniejsze w tym etapie jest to, aby stworzyć interfejs intuicyjny, interaktywny oraz przyjazny dla użytkownika.
-Faza trzecia czyli tworzenie, jest to najdłuższa faza całego procesu, polega na utworzeniu działającego oprogramowania według zaleceń z poprzednich faz. Faza czwarta czyli testowanie polega na sprawdzeniu, czy programiści uzyskali oczekiwany przez klienta efekt, sprawdzenie wszystkich usług, na które pozwala aplikacja oraz naprawienie potencjalnych błędów. Przed ostatnia faza polega na wdrożeniu do klienta, nasze oprogramowanie powinno spełniać wszystkie wymagania z fazy pierwszej, a także posiadać interfejs zalecany podczas projektowania. W ostatniej fazie programiści oraz testerzy skupiają się na utrzymaniu projektu, gdy klient zwraca się po nową funkcjonalność, programiści wracają do fazy trzeciej, powtarzając również fazę czwartą i piątą. W tym momencie ważne jest również monitorowanie funkcjonowania aplikacji i analiza, czy wszystko przebiega pomyślnie.
+\subsection{Projektowanie UX/UI}
 
-Wytwarzanie oprogramowania, ciągle jest rozwijane, ponieważ wielu firmom zależy na jak najszybszym dostarczeniu gotowej aplikacji do klienta, co nie zawsze jest dobrym rozwiązaniem. Priorytetową sprawą jest przeanalizowanie wymagań postawionych przez klienta. Rozwijane technologie tworzenia oprogramowania, polegają na opracowywaniu nowych bibliotek do języków programowania, nowych frameworków lub całych języków, które dążą do automatyzacji działań programistów.
+Drugi etap skupia się na projektowaniu doświadczenia użytkownika (UX) oraz interfejsu użytkownika (UI). Bazując na informacjach zebranych w pierwszej fazie, projektanci tworzą wizualne reprezentacje aplikacji, które pomagają zrozumieć, jak będzie ona wyglądać i funkcjonować. Kluczowym celem tego etapu jest stworzenie interfejsu, który jest intuicyjny, interaktywny i przyjazny dla użytkownika. Dobre projektowanie UX/UI może znacząco wpłynąć na sukces aplikacji, ponieważ użytkownicy często oceniają aplikacje na podstawie ich wyglądu i użyteczności.
+
+\subsection{Tworzenie aplikacji}
+
+Faza trzecia to etap, w którym programiści przystępują do właściwej pracy nad kodem. Bazując na specyfikacjach z poprzednich faz, tworzą działające oprogramowanie. Jest to najbardziej pracochłonny etap całego procesu, wymagający nie tylko umiejętności technicznych, ale także zdolności do rozwiązywania problemów i dostosowywania się do ewentualnych zmian w specyfikacji.
+
+\subsection{Testowanie}
+
+Po zakończeniu fazy tworzenia, następuje etap testowania. Jego głównym celem jest sprawdzenie, czy aplikacja działa zgodnie z oczekiwaniami klienta oraz czy nie zawiera błędów. Testerzy przeprowadzają różnego rodzaju testy, od testów jednostkowych po testy integracyjne, aby upewnić się, że wszystko działa poprawnie.
+
+\subsection{Wdrożenie}
+
+Przedostatni etap polega na wdrożeniu aplikacji u klienta. W tym czasie programiści i inżynierowie ds. wdrożeń pracują razem, aby zapewnić płynne i bezproblemowe uruchomienie aplikacji w środowisku produkcyjnym.
+
+\subsection{Utrzymanie i rozwój}
+
+Ostatnia faza to utrzymanie i rozwój aplikacji. W tym etapie programiści i testerzy monitorują działanie aplikacji, analizując jej wydajność i rozwiązując ewentualne problemy. Jeśli klient zgłasza potrzebę wprowadzenia nowych funkcjonalności, proces projektowania i wytwarzania oprogramowania rozpoczyna się ponownie, zaczynając od fazy tworzenia.
+
+Współczesne metody wytwarzania oprogramowania są stale rozwijane, aby sprostać rosnącym wymaganiom rynku. Nowe technologie, biblioteki i frameworki pojawiają się regularnie, oferując programistom narzędzia, które ułatwiają i przyspieszają proces tworzenia aplikacji. Jednak niezależnie od używanych narzędzi, kluczem do sukcesu jest zrozumienie potrzeb klienta i dostarczenie rozwiązania, które spełni te potrzeby.
+
+
+\section{Budowa aplikacji webowej}
+
+Tworzenie aplikacji webowej to proces skomplikowany i wieloetapowy, który wymaga połączenia różnych technologii, narzędzi i praktyk. Aby zrozumieć, jak jest zbudowana typowa aplikacja webowa, warto przyjrzeć się jej głównym składnikom.
+
+\subsection{Frontend}
+
+Frontend to część aplikacji, z którą bezpośrednio kontaktuje się użytkownik. Obejmuje ona interfejs użytkownika (UI) oraz wszystkie elementy wizualne, które są prezentowane w przeglądarce. Główne technologie używane w frontendzie to:
+
+HTML - język znaczników, który opisuje strukturę strony.
+CSS - służy do stylizacji elementów HTML, decydując o wyglądzie strony.
+JavaScript (lub TypeScript w przypadku Angulara) - język programowania, który pozwala na tworzenie interaktywnych elementów strony.
+
+\subsection{Backend}
+
+Backend to serwerowa część aplikacji, która zajmuje się przetwarzaniem danych, komunikacją z bazą danych i realizacją logiki biznesowej. Główne składniki backendu to:
+
+Serwer - maszyna lub oprogramowanie, które obsługuje żądania od klientów i zwraca odpowiednie dane.
+Baza danych - system przechowywania danych, który pozwala na ich szybkie wyszukiwanie, modyfikowanie i przechowywanie.
+API (Application Programming Interface) - zestaw reguł i mechanizmów, które pozwalają różnym częściom oprogramowania komunikować się ze sobą.
+\subsection{Proces tworzenia}
+
+Analiza wymagań - zrozumienie potrzeb użytkownika i określenie funkcjonalności aplikacji.
+Projektowanie - tworzenie makiet, wybór technologii i planowanie architektury aplikacji.
+Implementacja - właściwe programowanie, tworzenie kodu źródłowego aplikacji.
+Testowanie - sprawdzanie, czy aplikacja działa poprawnie i spełnia wszystkie wymagania.
+Wdrożenie - umieszczanie aplikacji na serwerze, aby była dostępna dla użytkowników.
+Utrzymanie - monitorowanie aplikacji, naprawianie błędów, aktualizacje i rozwijanie funkcjonalności.
+Podsumowując, budowa aplikacji webowej to nie tylko kwestia techniczna, ale także planowania, projektowania i testowania. Ważne jest, aby cały proces był dobrze zorganizowany i skoordynowany, co pozwoli na stworzenie funkcjonalnej, wydajnej i bezpiecznej aplikacji.
+
+\section{Optymalizacja i bezpieczeństwo aplikacji webowej}
+
+W dzisiejszych czasach, kiedy konkurencja w świecie aplikacji internetowych jest ogromna, nie wystarczy stworzyć funkcjonalną stronę. Aplikacja musi być również szybka, responsywna i przede wszystkim bezpieczna. W tym rozdziale omówimy kluczowe aspekty optymalizacji i zabezpieczania aplikacji webowych.
+
+\subsection{Optymalizacja}
+
+Minimalizacja i kompresja plików - zmniejszenie rozmiaru plików CSS, JavaScript i obrazów może znacząco przyspieszyć ładowanie strony.
+Wykorzystanie pamięci podręcznej - przechowywanie często używanych danych w pamięci podręcznej przeglądarki pozwala na szybsze ładowanie strony podczas kolejnych wizyt.
+Optymalizacja obrazów - stosowanie odpowiedniego formatu i rozmiaru obrazów, a także leniwe ładowanie (ang. lazy loading), które polega na ładowaniu obrazów dopiero wtedy, gdy są one widoczne dla użytkownika.
+Optymalizacja baz danych - regularne indeksowanie, czyszczenie i aktualizacja baz danych zapewniają ich wydajne działanie.
+
+\subsection{Bezpieczeństwo}
+
+Szyfrowanie - stosowanie protokołu HTTPS zapewnia, że dane przesyłane między serwerem a klientem są zaszyfrowane i trudne do przechwycenia.
+Autentykacja i autoryzacja - upewnienie się, że tylko uprawnieni użytkownicy mają dostęp do pewnych zasobów i funkcji aplikacji.
+Zabezpieczenie przed atakami - takimi jak SQL Injection, Cross-Site Scripting (XSS) czy Cross-Site Request Forgery (CSRF). Wymaga to stałego monitorowania, aktualizacji oprogramowania i stosowania najlepszych praktyk programistycznych.
+Regularne kopie zapasowe - w przypadku awarii lub ataku, ważne jest posiadanie aktualnych kopii zapasowych danych i kodu aplikacji, aby móc szybko przywrócić jej działanie.
+
+\subsection{Monitoring i aktualizacje}
+
+Nieustanny monitoring aplikacji pozwala na szybkie wykrywanie i reagowanie na potencjalne problemy. Regularne aktualizacje, zarówno samej aplikacji, jak i używanych technologii, zapewniają jej stabilność, wydajność i bezpieczeństwo.
+
+Podsumowując, tworzenie aplikacji webowej to jedno, ale jej optymalizacja i zabezpieczanie to kluczowe kroki, które decydują o sukcesie projektu. Wysoka wydajność i bezpieczeństwo to czynniki, które przyciągają i zatrzymują użytkowników, dlatego nie można ich lekceważyć.
+
+\section{Integracja z innymi narzędziami i serwisami}
+
+Współczesne aplikacje webowe rzadko funkcjonują w izolacji. Często integrują się z różnymi zewnętrznymi narzędziami, platformami i serwisami, aby rozszerzyć swoje funkcjonalności, poprawić wydajność i dostarczyć użytkownikom bardziej kompleksowe doświadczenie. W tym rozdziale przyjrzymy się kluczowym aspektom integracji aplikacji webowych z innymi systemami.
+
+\subsection{API - klucz do integracji}
+
+API, czyli interfejs programistyczny aplikacji, to zestaw reguł i definicji, które pozwalają różnym aplikacjom komunikować się ze sobą. Dzięki API, aplikacja webowa może na przykład pobierać dane z mediów społecznościowych, korzystać z funkcji płatności czy integrować się z systemami zarządzania treścią.
+
+\subsection{Popularne integracje}
+
+Płatności - integracja z platformami takimi jak PayPal, Stripe czy PayU pozwala na szybkie i bezpieczne przeprowadzanie transakcji finansowych w aplikacji.
+Media społecznościowe - połączenie z Facebookiem, Twitterem czy Instagramem umożliwia na przykład udostępnianie treści, logowanie za pomocą konta w mediach społecznościowych czy analizę aktywności użytkowników.
+Analityka - narzędzia takie jak Google Analytics czy Hotjar dostarczają cennych informacji o zachowaniach użytkowników, co pozwala na optymalizację aplikacji i dostosowywanie jej do potrzeb odbiorców.
+Chmura - integracja z platformami chmurowymi, takimi jak AWS, Google Cloud czy Azure, pozwala na skalowanie aplikacji, przechowywanie danych czy korzystanie z zaawansowanych narzędzi do analizy i przetwarzania informacji.
+
+\subsection{Wyzwania związane z integracją}
+
+Integracja z zewnętrznymi narzędziami i serwisami niesie ze sobą pewne wyzwania. Należy między innymi uwzględnić:
+
+Bezpieczeństwo - przesyłanie i odbieranie danych z zewnętrznych źródeł musi być zabezpieczone, aby chronić prywatność użytkowników i unikać potencjalnych ataków.
+Kompatybilność - różne systemy mogą korzystać z różnych technologii i standardów, co może powodować problemy z integracją.
+Aktualizacje - zarówno aplikacja, jak i zewnętrzne narzędzia, z którymi się integruje, są regularnie aktualizowane. Należy monitorować te zmiany i dostosowywać integrację, aby wszystko działało poprawnie.
+Podsumowując, integracja z innymi narzędziami i serwisami pozwala na wzbogacenie funkcjonalności aplikacji webowej i dostarczenie użytkownikom bardziej zaawansowanych i spersonalizowanych doświadczeń. Jednakże wymaga to również uwzględnienia pewnych wyzwań i stałego monitorowania połączeń z zewnętrznymi systemami.
