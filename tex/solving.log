@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  25 AUG 2023 19:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  25 AUG 2023 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -592,43 +592,19 @@ a-nia. Jego gªów-nym ce-lem jest
  []
 
 [4]
-Underfull \hbox (badness 1024) in paragraph at lines 63--66
-[]\OT4/cmr/m/n/10 Serwer - ma-szyna lub opro-gra-mo-wa-nie, które ob-sªu-guje »
-¡-da-nia od klien-tów i zwraca
- []
-
-
-Underfull \hbox (badness 1831) in paragraph at lines 68--75
-\OT4/cmr/m/n/10 Pro-jek-to-wa-nie - two-rze-nie ma-kiet, wy-bór tech-no-lo-gii 
-i pla-no-wa-nie ar-chi-tek-tury apli-ka-cji.
- []
-
-
-Underfull \hbox (badness 1112) in paragraph at lines 68--75
-\OT4/cmr/m/n/10 - spraw-dza-nie, czy apli-ka-cja dziaªa po-praw-nie i speª-nia 
-wszyst-kie wy-ma-ga-nia. Wdro-»e-nie
- []
-
-
-Underfull \hbox (badness 2088) in paragraph at lines 68--75
-\OT4/cmr/m/n/10 - umiesz-cza-nie apli-ka-cji na ser-we-rze, aby byªa do-st¦pna 
-dla u»yt-kow-ni-ków. Utrzy-ma-nie
- []
-
-
-Underfull \hbox (badness 2626) in paragraph at lines 68--75
-\OT4/cmr/m/n/10 - mo-ni-to-ro-wa-nie apli-ka-cji, na-pra-wia-nie bª¦-dów, ak-tu
--ali-za-cje i roz-wi-ja-nie funk-cjo-nal-no-±ci.
+Underfull \hbox (badness 1515) in paragraph at lines 77--78
+[]\OT4/cmr/m/n/10 Utrzymanie - mo-ni-to-ro-wa-nie apli-ka-cji, na-pra-wia-nie b
+ª¦-dów, ak-tu-ali-za-cje i roz-wi-ja-nie
  []
 
 [5]
-Underfull \hbox (badness 1163) in paragraph at lines 102--103
+Underfull \hbox (badness 1163) in paragraph at lines 108--109
 \OT4/cmr/m/n/10 ze-wn¦trz-nymi na-rz¦-dziami, plat-for-mami i ser-wi-sami, aby 
 roz-sze-rzy¢ swoje funk-cjo-nal-no-±ci,
  []
 
 [6]) (rozdzial_2.tex
-Underfull \hbox (badness 1048) in paragraph at lines 119--1
+Underfull \hbox (badness 1048) in paragraph at lines 125--1
 \OT4/cmr/m/n/10 z in-te-gra-cj¡. Ak-tu-ali-za-cje - za-równo apli-ka-cja, jak i
  ze-wn¦trzne na-rz¦-dzia, z któ-rymi si¦
  []
@@ -664,28 +640,29 @@ Rozdzia\l  4.
 
  [21] (solving.aux) ) 
 Here is how much of TeX's memory you used:
- 9619 strings out of 476339
- 158268 string characters out of 5788119
- 1862340 words of memory out of 5000000
- 29849 multiletter control sequences out of 15000+600000
- 523279 words of font info for 61 fonts, out of 8000000 for 9000
+ 9622 strings out of 476339
+ 158304 string characters out of 5788119
+ 1861340 words of memory out of 5000000
+ 29851 multiletter control sequences out of 15000+600000
+ 523614 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,10n,82p,1944b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dv
 ips/pl/plit.enc}{C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/p
-l/plrm.enc}<C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/
-plbx10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/
-plbx12.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/
-plr10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/p
-lr9.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pls
-s10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pls
-s17.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pls
-sbx10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/p
-lti10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/p
-lti9.pfb>
-Output written on solving.pdf (25 pages, 142011 bytes).
+l/plrm.enc} <C:\Users\adamw\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
+i600\tcrm1000.pk><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/pl/plbx10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/pl/plbx12.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/pl/plr10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/pl/plr9.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+pl/plss10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+pl/plss17.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+pl/plssbx10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/pl/plti10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/pl/plti9.pfb>
+Output written on solving.pdf (25 pages, 142809 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
+ 136 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
