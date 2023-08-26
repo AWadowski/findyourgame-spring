@@ -32,8 +32,7 @@ public class FirebaseConfig {
 
     @Bean
     public FirebaseApp firebaseApp() throws IOException {
-        FileInputStream refreshToken = new FileInputStream("C:\\Users\\adamw\\IdeaProjects\\findyourgame-spring\\databases-application\\src\\main\\resources\\key.json");
-
+        InputStream refreshToken = getClass().getResourceAsStream("/key.json");
         FirebaseOptions options = FirebaseOptions.builder()
                 .setCredentials(GoogleCredentials.fromStream(refreshToken))
                 .setDatabaseUrl("https://databases-3fd9e.firebaseio.com/")
