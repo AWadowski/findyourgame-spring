@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  25 AUG 2023 19:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  4 SEP 2023 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -515,6 +515,16 @@ LaTeX Font Info:    Trying to load font information for OT4+cmss on input line
 (C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmss.fd
 File: ot4cmss.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
+Underfull \hbox (badness 10000) in paragraph at lines 18--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--23
+
+ []
+
+
 Overfull \hbox (57.2687pt too wide) in paragraph at lines 16--24
 []$[]$ 
  []
@@ -530,8 +540,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--40
  []
 
 
+Underfull \hbox (badness 7486) in paragraph at lines 44--45
+\OT4/cmss/bx/n/14.4 baz da-nych: Fi-re-base i Oracle da-ta-base, na
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
-\OT4/cmss/bx/n/14.4 apli-ka-cji wy-szu-ku-j¡-cej gry we-dªug za-da-nych
+\OT4/cmss/bx/n/14.4 przy-kªa-dzie apli-ka-cji wy-szu-ku-j¡-cej gry we-dªug
  []
 
 
@@ -560,25 +575,20 @@ Non-PDF special ignored!
 
 
 {C:/Users/adamw/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./img/logo.j
-pg>]) [2] (solving.toc)
+pg>] [2]) [3] [4
+
+] (solving.toc)
 \tf@toc=\write5
 \openout5 = `solving.toc'.
 
- [3
-
-] [4] (wstep.tex) (rozdzial_1.tex [1
+ [5] [6] (wstep.tex) (rozdzial_1.tex [1
 
 
-] [2
+]
+[2
 
 ]
 Rozdzia\l  1.
-
-Underfull \hbox (badness 1337) in paragraph at lines 13--14
-[]\OT4/cmr/m/n/10 Przy two-rze-niu apli-ka-cji we-bo-wej j¦-zyk Java sªu»y nam 
-je-dy-nie do wy-sta-wie-nia tzw.
- []
-
 [3]
 Underfull \hbox (badness 2478) in paragraph at lines 26--27
 \OT4/cmr/m/n/10 wi-zu-alne re-pre-zen-ta-cje apli-ka-cji, które po-ma-gaj¡ zro-
@@ -591,62 +601,191 @@ Underfull \hbox (badness 1910) in paragraph at lines 34--35
 a-nia. Jego gªów-nym ce-lem jest
  []
 
-[4]
-Underfull \hbox (badness 1515) in paragraph at lines 77--78
-[]\OT4/cmr/m/n/10 Utrzymanie - mo-ni-to-ro-wa-nie apli-ka-cji, na-pra-wia-nie b
-ª¦-dów, ak-tu-ali-za-cje i roz-wi-ja-nie
- []
-
-[5]
+[4] [5]
 Underfull \hbox (badness 1163) in paragraph at lines 108--109
 \OT4/cmr/m/n/10 ze-wn¦trz-nymi na-rz¦-dziami, plat-for-mami i ser-wi-sami, aby 
 roz-sze-rzy¢ swoje funk-cjo-nal-no-±ci,
  []
 
-[6]) (rozdzial_2.tex
-Underfull \hbox (badness 1048) in paragraph at lines 125--1
-\OT4/cmr/m/n/10 z in-te-gra-cj¡. Ak-tu-ali-za-cje - za-równo apli-ka-cja, jak i
- ze-wn¦trzne na-rz¦-dzia, z któ-rymi si¦
+
+Underfull \hbox (badness 1496) in paragraph at lines 118--119
+[]\OT4/cmr/bx/n/10 Media spo-ªecz-no-±ciowe \OT4/cmr/m/n/10 - po-ª¡-cze-nie z F
+a-ce-bo-okiem, Twit-te-rem czy In-sta-gra-mem
  []
 
-[7] [8
 
-]
+Underfull \hbox (badness 1057) in paragraph at lines 118--119
+\OT4/cmr/m/n/10 umo»-li-wia na przy-kªad udo-st¦p-nia-nie tre-±ci, lo-go-wa-nie
+ za po-moc¡ konta w me-diach
+ []
+
+[6]
+Underfull \hbox (badness 4779) in paragraph at lines 131--132
+\OT4/cmr/m/n/10 Podsumowuj¡c, in-te-gra-cja z in-nymi na-rz¦-dziami i ser-wi-sa
+mi po-zwala na wzbo-ga-ce-nie
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 131--132
+\OT4/cmr/m/n/10 funk-cjo-nal-no-±ci apli-ka-cji we-bo-wej i do-star-cze-nie u»y
+t-kow-ni-kom bar-dziej za-awan-so-wa-nych i
+ []
+
+[7]) (rozdzial_2.tex [8]
 Rozdzia\l  2.
-) (rozdzial_3.tex [9] [10
+<./img/javalogo.jpg, id=55, 653.44125pt x 401.5pt>
+File: ./img/javalogo.jpg Graphic file (type jpg)
+<use ./img/javalogo.jpg>
+Package pdftex.def Info: ./img/javalogo.jpg  used on input line 6.
+(pdftex.def)             Requested size: 298.75264pt x 183.56497pt.
 
-]
+Underfull \hbox (badness 2951) in paragraph at lines 17--18
+[]\OT4/cmr/bx/n/10 Obiektowo±¢: \OT4/cmr/m/n/10 Java jest j¦-zy-kiem w peªni ob
+iek-to-wym, co uªa-twia or-ga-ni-za-cj¦ i
+ []
+
+[9
+
+ <./img/javalogo.jpg>]
+<./img/springboot.png, id=59, 602.25pt x 316.18124pt>
+File: ./img/springboot.png Graphic file (type png)
+<use ./img/springboot.png>
+Package pdftex.def Info: ./img/springboot.png  used on input line 39.
+(pdftex.def)             Requested size: 256.07741pt x 134.4452pt.
+
+Underfull \hbox (badness 1694) in paragraph at lines 46--47
+[]\OT4/cmr/bx/n/10 Automatyzacja kon-fi-gu-ra-cji: \OT4/cmr/m/n/10 Spring Boot 
+au-to-ma-tycz-nie kon-fi-gu-ruje apli-ka-cj¦ na
+ []
+
+[10 <./img/springboot.png>]
+Underfull \hbox (badness 1603) in paragraph at lines 59--60
+[]\OT4/cmr/bx/n/10 Zastosowania: \OT4/cmr/m/n/10 Spring Boot jest nie-zwy-kle w
+szech-stronny. Wy-ko-rzy-sty-wany jest do
+ []
+
+<./img/lombok.png, id=65, 281.05pt x 281.05pt>
+File: ./img/lombok.png Graphic file (type png)
+<use ./img/lombok.png>
+Package pdftex.def Info: ./img/lombok.png  used on input line 65.
+(pdftex.def)             Requested size: 170.71393pt x 170.7112pt.
+
+Underfull \hbox (badness 2253) in paragraph at lines 74--75
+[]\OT4/cmr/bx/n/10 Automatyczna ge-ne-ra-cja kodu: \OT4/cmr/m/n/10 Lom-bok au-t
+o-ma-tycz-nie ge-ne-ruje kod dla wielu
+ []
+
+[11 <./img/lombok.png>]
+<./img/liquibase.png, id=70, 277.035pt x 182.6825pt>
+File: ./img/liquibase.png Graphic file (type png)
+<use ./img/liquibase.png>
+Package pdftex.def Info: ./img/liquibase.png  used on input line 98.
+(pdftex.def)             Requested size: 170.71393pt x 112.57346pt.
+
+Underfull \hbox (badness 2443) in paragraph at lines 102--103
+\OT4/cmr/m/n/10 pro-gra-mi-stom kon-trol¦ wer-sji sche-matu bazy da-nych, co je
+st nie-zb¦dne w dy-na-micz-nie
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 115--116
+[]\OT4/cmr/bx/n/10 Integracja z na-rz¦-dziami bu-dowy: \OT4/cmr/m/n/10 Li-qu-ib
+ase ªa-two in-te-gruje si¦ z po-pu-lar-nymi
+ []
+
+[12 <./img/liquibase.png>]
+<./img/typescript.png, id=75, 742.775pt x 406.51875pt>
+File: ./img/typescript.png Graphic file (type png)
+<use ./img/typescript.png>
+Package pdftex.def Info: ./img/typescript.png  used on input line 131.
+(pdftex.def)             Requested size: 213.39568pt x 116.78949pt.
+ [13 <./img/typescript.png>]
+Underfull \hbox (badness 1389) in paragraph at lines 155--156
+[]\OT4/cmr/bx/n/10 Aplikacje jed-no-stro-ni-cowe (SPA): \OT4/cmr/m/n/10 Ty-pe-S
+cript jest cz¦-sto u»y-wany do two-rze-nia
+ []
+
+<./img/angular.png, id=81, 319.1925pt x 159.59625pt>
+File: ./img/angular.png Graphic file (type png)
+<use ./img/angular.png>
+Package pdftex.def Info: ./img/angular.png  used on input line 165.
+(pdftex.def)             Requested size: 256.07741pt x 128.04001pt.
+
+Underfull \hbox (badness 2538) in paragraph at lines 169--170
+[]\OT4/cmr/m/n/10 Angular to po-pu-larny fra-me-work do two-rze-nia apli-ka-cji
+ in-ter-ne-to-wych opra-co-wany i
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 169--170
+\OT4/cmr/m/n/10 utrzy-my-wany przez Go-ogle. Zo-staª za-pro-jek-to-wany z my-±l
+¡ o two-rze-niu dy-na-micz-nych,
+ []
+
+[14 <./img/angular.png>]
+<./img/primeng.png, id=86, 229.3368pt x 105.5142pt>
+File: ./img/primeng.png Graphic file (type png)
+<use ./img/primeng.png>
+Package pdftex.def Info: ./img/primeng.png  used on input line 202.
+(pdftex.def)             Requested size: 213.39568pt x 98.18193pt.
+
+Underfull \hbox (badness 4940) in paragraph at lines 221--222
+[]\OT4/cmr/bx/n/10 Wysoka wy-daj-no±¢: \OT4/cmr/m/n/10 Kom-po-nenty Pri-meNG s¡
+ zop-ty-ma-li-zo-wane pod wzgl¦-dem
+ []
+
+[15 <./img/primeng.png>]
+Underfull \hbox (badness 1259) in paragraph at lines 229--230
+\OT4/cmr/m/n/10 jak ta-bele, wy-kresy czy for-mu-la-rze, Pri-meNG jest ide-al-n
+ym wy-bo-rem do two-rze-nia
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 236--237
+\OT4/cmr/m/n/10 mog¡ nie by¢ do-sto-so-wane do bar-dzo spe-cy-ficz-nych po-trze
+b. Nie-mniej jed-nak, dla wielu
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 242--243
+[]\OT4/cmr/m/n/10 Jednak»e, nie-za-le»-nie od za-let po-szcze-gól-nych tech-no-
+lo-gii, klu-czem jest ich pra-wi-dªowe
+ []
+
+) (rozdzial_3.tex [16]
 Rozdzia\l  3.
-) (rozdzial_4.tex [11] [12
+) (rozdzial_4.tex [17
+
+] [18
 
 ]
 Rozdzia\l  4.
-) (podsumowanie.tex [13] [14
+) (podsumowanie.tex [19] [20
 
-]) (bibliografia.tex [15] [16
+]) (bibliografia.tex [21] [22
 
-]) [17] [18
+]) [23] [24
 
 ]
 (solving.lot)
 \tf@lot=\write6
 \openout6 = `solving.lot'.
 
- [19] [20
+ [25] [26
 
 ] (solving.lof)
 \tf@lof=\write7
 \openout7 = `solving.lof'.
 
- [21] (solving.aux) ) 
+ [27] (solving.aux) ) 
 Here is how much of TeX's memory you used:
- 9622 strings out of 476339
- 158304 string characters out of 5788119
+ 9688 strings out of 476339
+ 159586 string characters out of 5788119
  1861340 words of memory out of 5000000
- 29851 multiletter control sequences out of 15000+600000
+ 29909 multiletter control sequences out of 15000+600000
  523614 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,10n,82p,1944b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,10n,82p,1939b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dv
 ips/pl/plit.enc}{C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/p
 l/plrm.enc} <C:\Users\adamw\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
@@ -660,9 +799,9 @@ pl/plss17.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 pl/plssbx10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/pl/plti10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/pl/plti9.pfb>
-Output written on solving.pdf (25 pages, 142809 bytes).
+Output written on solving.pdf (33 pages, 271089 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
+ 175 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
