@@ -20,7 +20,7 @@
 \contentsline {subsection}{\numberline {1.4.2}Bezpieczeństwo}{6}{}%
 \contentsline {subsection}{\numberline {1.4.3}Monitoring i aktualizacje}{6}{}%
 \contentsline {section}{\numberline {1.5}Integracja z innymi narzędziami i serwisami}{6}{}%
-\contentsline {subsection}{\numberline {1.5.1}API - klucz do integracji}{6}{}%
+\contentsline {subsection}{\numberline {1.5.1}API - klucz do integracji \cite {apiIntegration}}{6}{}%
 \contentsline {subsection}{\numberline {1.5.2}Popularne integracje}{6}{}%
 \contentsline {subsection}{\numberline {1.5.3}Wyzwania związane z integracją}{7}{}%
 \contentsline {section}{\numberline {1.6}Porównanie baz relacyjnych i nierelacyjnych: Firebase i Oracle Database}{7}{}%
