@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  4 SEP 2023 12:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  4 SEP 2023 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -605,11 +605,19 @@ Underfull \hbox (badness 1910) in paragraph at lines 34--35
 a-nia. Jego gªów-nym ce-lem jest
  []
 
-[4] [5]
+[4]
+
+LaTeX Warning: Citation `optymalizacja' on page 5 undefined on input line 78.
+
+[5]
 Underfull \hbox (badness 1163) in paragraph at lines 99--100
 \OT4/cmr/m/n/10 ze-wn¦trz-nymi na-rz¦-dziami, plat-for-mami i ser-wi-sami, aby 
 roz-sze-rzy¢ swoje funk-cjo-nal-no-±ci,
  []
+
+
+LaTeX Warning: Citation `apiIntegration' on page 6 undefined on input line 101.
+
 
 
 Underfull \hbox (badness 1496) in paragraph at lines 109--110
@@ -643,6 +651,12 @@ File: ./img/javalogo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./img/javalogo.jpg  used on input line 6.
 (pdftex.def)             Requested size: 298.75264pt x 183.56497pt.
 
+LaTeX Warning: Citation `java' on page 9 undefined on input line 7.
+
+
+LaTeX Warning: Citation `java' on page 9 undefined on input line 7.
+
+
 Underfull \hbox (badness 2951) in paragraph at lines 17--18
 []\OT4/cmr/bx/n/10 Obiektowo±¢: \OT4/cmr/m/n/10 Java jest j¦-zy-kiem w peªni ob
 iek-to-wym, co uªa-twia or-ga-ni-za-cj¦ i
@@ -656,6 +670,13 @@ File: ./img/springboot.png Graphic file (type png)
 <use ./img/springboot.png>
 Package pdftex.def Info: ./img/springboot.png  used on input line 39.
 (pdftex.def)             Requested size: 256.07741pt x 134.4452pt.
+
+
+LaTeX Warning: Citation `springboot' on page 10 undefined on input line 40.
+
+
+LaTeX Warning: Citation `springboot' on page 10 undefined on input line 40.
+
 
 Underfull \hbox (badness 1694) in paragraph at lines 46--47
 []\OT4/cmr/bx/n/10 Automatyzacja kon-fi-gu-ra-cji: \OT4/cmr/m/n/10 Spring Boot 
@@ -674,6 +695,12 @@ File: ./img/lombok.png Graphic file (type png)
 Package pdftex.def Info: ./img/lombok.png  used on input line 65.
 (pdftex.def)             Requested size: 170.71393pt x 170.7112pt.
 
+LaTeX Warning: Citation `lombok' on page 11 undefined on input line 66.
+
+
+LaTeX Warning: Citation `lombok' on page 11 undefined on input line 66.
+
+
 Underfull \hbox (badness 2253) in paragraph at lines 74--75
 []\OT4/cmr/bx/n/10 Automatyczna ge-ne-ra-cja kodu: \OT4/cmr/m/n/10 Lom-bok au-t
 o-ma-tycz-nie ge-ne-ruje kod dla wielu
@@ -685,6 +712,13 @@ File: ./img/liquibase.png Graphic file (type png)
 <use ./img/liquibase.png>
 Package pdftex.def Info: ./img/liquibase.png  used on input line 98.
 (pdftex.def)             Requested size: 170.71393pt x 80.15431pt.
+
+
+LaTeX Warning: Citation `liquibase' on page 12 undefined on input line 99.
+
+
+LaTeX Warning: Citation `liquibase' on page 12 undefined on input line 99.
+
 
 Underfull \hbox (badness 2443) in paragraph at lines 102--103
 \OT4/cmr/m/n/10 pro-gra-mi-stom kon-trol¦ wer-sji sche-matu bazy da-nych, co je
@@ -703,7 +737,14 @@ File: ./img/typescript.png Graphic file (type png)
 <use ./img/typescript.png>
 Package pdftex.def Info: ./img/typescript.png  used on input line 131.
 (pdftex.def)             Requested size: 213.39568pt x 116.78949pt.
- [13 <./img/typescript.png>]
+
+
+LaTeX Warning: Citation `typescript' on page 13 undefined on input line 132.
+
+
+LaTeX Warning: Citation `typescript' on page 13 undefined on input line 132.
+
+[13 <./img/typescript.png>]
 Underfull \hbox (badness 1389) in paragraph at lines 155--156
 []\OT4/cmr/bx/n/10 Aplikacje jed-no-stro-ni-cowe (SPA): \OT4/cmr/m/n/10 Ty-pe-S
 cript jest cz¦-sto u»y-wany do two-rze-nia
@@ -714,6 +755,12 @@ File: ./img/angular.png Graphic file (type png)
 <use ./img/angular.png>
 Package pdftex.def Info: ./img/angular.png  used on input line 165.
 (pdftex.def)             Requested size: 256.07741pt x 128.04001pt.
+
+LaTeX Warning: Citation `angular' on page 14 undefined on input line 166.
+
+
+LaTeX Warning: Citation `angular' on page 14 undefined on input line 166.
+
 
 Underfull \hbox (badness 2538) in paragraph at lines 169--170
 []\OT4/cmr/m/n/10 Angular to po-pu-larny fra-me-work do two-rze-nia apli-ka-cji
@@ -732,6 +779,13 @@ File: ./img/primeng.png Graphic file (type png)
 <use ./img/primeng.png>
 Package pdftex.def Info: ./img/primeng.png  used on input line 202.
 (pdftex.def)             Requested size: 213.39568pt x 98.18193pt.
+
+
+LaTeX Warning: Citation `primeng' on page 15 undefined on input line 203.
+
+
+LaTeX Warning: Citation `primeng' on page 15 undefined on input line 203.
+
 
 Underfull \hbox (badness 4940) in paragraph at lines 221--222
 []\OT4/cmr/bx/n/10 Wysoka wy-daj-no±¢: \OT4/cmr/m/n/10 Kom-po-nenty Pri-meNG s¡
@@ -778,39 +832,46 @@ LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line
 (C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
+Underfull \hbox (badness 2884) in paragraph at lines 18--19
+[]\OT4/cmr/m/n/9 Cechy bazy Oracle, \OT4/cmr/m/it/9 Oracle do-cu-men-ta-tion\OT
+4/cmr/m/n/9 , $\OT4/cmtt/m/n/9 https : / / docs . oracle . com / cd / E63057 _ 
+01 / doc . 30 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 \OT4/cmr/m/it/9 kodu\OT4/cmr/m/n/9 , https://weastronauts.com/jak-zwiekszyc-wyd
 ajnosc-aplikacji-webowych-dzieki-optymalizacji-
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 24--25
+Underfull \hbox (badness 6893) in paragraph at lines 33--34
 []\OT4/cmr/m/n/9 Spring Boot, \OT4/cmr/m/it/9 Spring Boot Logo\OT4/cmr/m/n/9 , 
 [On-line]. Ava-ila-ble: $\OT4/cmtt/m/n/9 https : / / 4 . bp . blogspot . com / 
 -[]ou-[]a _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 \OT4/cmtt/m/n/9 Aa1t7A / W6IhNc3Q0gI / AAAAAAAAD6Y / pwh44arKiuM _ NBqB1H7Pz4-[
 ]7QhUxAgZkACLcBGAs / s1600 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 \OT4/cmtt/m/n/9 tbn : ANd9GcQiGO5BBKNNU4O _ S93ALz31KXvsocE456AV-[]sQM6CNCTtd7h
 euYYy8EZH4SfCqwQ7BkpI0 & usqp =
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 33--34
+Underfull \hbox (badness 3568) in paragraph at lines 42--43
 []\OT4/cmr/m/n/9 TypeScript, \OT4/cmr/m/it/9 Ty-pe-Script Logo\OT4/cmr/m/n/9 , 
 [On-line]. Ava-ila-ble: $\OT4/cmtt/m/n/9 https : / / blog . toothpickapp . com 
 / content /
  []
 
 
-Underfull \hbox (badness 5726) in paragraph at lines 36--37
+Underfull \hbox (badness 5726) in paragraph at lines 45--46
 []\OT4/cmr/m/n/9 Angular, \OT4/cmr/m/it/9 An-gu-lar Logo\OT4/cmr/m/n/9 , [On-li
 ne]. Ava-ila-ble: $\OT4/cmtt/m/n/9 https : / / miro . medium . com / v2 / resiz
 e : fit : 480 /
@@ -824,7 +885,29 @@ e : fit : 480 /
 
  [25] [26
 
-] (solving.lof)
+] (solving.lof
+
+LaTeX Warning: Citation `java' on page 27 undefined on input line 4.
+
+
+LaTeX Warning: Citation `springboot' on page 27 undefined on input line 5.
+
+
+LaTeX Warning: Citation `lombok' on page 27 undefined on input line 6.
+
+
+LaTeX Warning: Citation `liquibase' on page 27 undefined on input line 7.
+
+
+LaTeX Warning: Citation `typescript' on page 27 undefined on input line 8.
+
+
+LaTeX Warning: Citation `angular' on page 27 undefined on input line 9.
+
+
+LaTeX Warning: Citation `primeng' on page 27 undefined on input line 10.
+
+)
 \tf@lof=\write7
 \openout7 = `solving.lof'.
 
@@ -837,10 +920,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 9834 strings out of 476339
- 161726 string characters out of 5788119
- 1861340 words of memory out of 5000000
- 30038 multiletter control sequences out of 15000+600000
+ 9837 strings out of 476339
+ 161755 string characters out of 5788119
+ 1862340 words of memory out of 5000000
+ 30041 multiletter control sequences out of 15000+600000
  527223 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,10n,82p,1939b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -858,7 +941,7 @@ adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plssbx10.pfb><C:/User
 s/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti10.pfb><C:/User
 s/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti9.pfb><C:/Users
 /adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt9.pfb>
-Output written on solving.pdf (33 pages, 306166 bytes).
+Output written on solving.pdf (33 pages, 308685 bytes).
 PDF statistics:
  181 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
