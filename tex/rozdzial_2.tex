@@ -4,12 +4,12 @@
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\linewidth]{./img/javalogo.jpg}
-    \caption{Logo języka Java \cite{java}}
+    \caption{Logo języka Java (źródło: https://ubiqum.com)}
     \label{fig:Java}
 \end{figure}
 Java to język programowania wysokiego poziomu oraz platforma obliczeniowa, która została zaprojektowana w połowie lat 90. przez firmę Sun Microsystems. Od tego czasu Java stała się jednym z najbardziej popularnych języków programowania na świecie. Java została stworzona przez grupę inżynierów pod kierownictwem Jamesa Goslinga w Sun Microsystems w 1991 roku jako część projektu Green, który miał na celu rozwój inteligentnych urządzeń do domu. Jednakże, zamiast tego, Java znalazła swoje miejsce w świecie internetu. Pierwsza oficjalna wersja (Java 1.0) została wydana w 1996 roku.
 
-Charakterystyczne cechy:
+Charakterystyczne cechy języka to między innymi:
 \begin{itemize}
 \item \textbf{Przenośność:} Dzięki maszynie wirtualnej Java (JVM), kod napisany w Javie jest przenośny i może być uruchamiany na różnych platformach bez konieczności modyfikacji.
 \item \textbf{Bezpieczeństwo:} Java oferuje różne mechanizmy bezpieczeństwa, takie jak zarządzanie pamięcią, które chronią przed wieloma popularnymi błędami programistycznymi.
@@ -30,50 +30,51 @@ Aby dobrze wykorzystać potencjał tego języka należy zwrócić uwagę na nast
 \begin{itemize}
 \item \textbf{Ucz się bibliotek:} Java ma ogromną bibliotekę standardową oraz wiele zewnętrznych bibliotek. Znajomość tych narzędzi może znacząco przyspieszyć proces tworzenia aplikacji.
 \item \textbf{Dbaj o jakość kodu:} Java jest językiem, który łatwo się komplikuje. Regularne przeglądy kodu, testy jednostkowe i stosowanie wzorców projektowych mogą pomóc w utrzymaniu kodu w dobrej kondycji.
-\item \textbf{Bądź na bieżąco:} Java jest ciągle rozwijana. Nowe wersje przynoszą nowe funkcje, które mogą ułatwić i przyspieszyć pracę.
+\item \textbf{Bądź na bieżąco:} Java jest ciągle rozwijana. Nowe wersje przynoszą nowe funkcje, które mogą ułatwić i przyspieszyć pracę \cite{javaSpecification}.
 \end{itemize}
 
 \section{Spring Boot}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\linewidth]{./img/springboot.png}
-    \caption{Logo frameworku Spring Boot \cite{springboot}}
+    \caption{Logo frameworku Spring Boot (źródło: https://4.bp.blogspot.com/)}
     \label{fig:Springboot}
 \end{figure}
 Spring Boot, będący kluczowym elementem ekosystemu Spring, to nowoczesny framework zaprojektowany z myślą o uproszczeniu procesu tworzenia aplikacji opartych na Springu. Jego głównym celem jest eliminacja konieczności ręcznej konfiguracji, co pozwala programistom skupić się na tworzeniu funkcjonalności aplikacji i szybkim wdrażaniu jej.
 
 \begin{itemize}
 \item \textbf{Automatyzacja konfiguracji:} Spring Boot automatycznie konfiguruje aplikację na podstawie dostępnych w projekcie bibliotek. Dzięki temu programiści mogą skupić się na kodzie, nie martwiąc się o skomplikowane ustawienia.
-\item \textbf{Starters:} Są to zestawy zależności, które upraszczają dodawanie funkcjonalności do aplikacji. Na przykład, chcąc dodać wsparcie dla bazy danych MongoDB, wystarczy dodać odpowiedni "starter", a Spring Boot zajmie się resztą.
+\item \textbf{Starters:} Są to zestawy zależności, które upraszczają dodawanie funkcjonalności do aplikacji. Na przykład, chcąc dodać wsparcie dla bazy danych MongoDB, wystarczy dodać odpowiedni ,,starter'', a Spring Boot zajmie się resztą.
 
 \item \textbf{Narzędzia produkcyjne:} Spring Boot zawiera narzędzia przeznaczone do monitorowania i zarządzania aplikacją w środowisku produkcyjnym, takie jak monitorowanie metryk, przeglądanie logów czy analiza stanu aplikacji w czasie rzeczywistym.
 
 \item \textbf{Zalety Spring Boot:}
 \begin{itemize}
-    \item \textbf{Szybkość tworzenia:} Automatyzacja konfiguracji i dostępność "starters" przyspieszają proces tworzenia aplikacji.
+    \item \textbf{Szybkość tworzenia:} Automatyzacja konfiguracji i dostępność
+    ,,starters'' przyspieszają proces tworzenia aplikacji.
     \item \textbf{Mikroserwisy:} Doskonała współpraca z Spring Cloud ułatwia tworzenie architektury opartej na mikroserwisach.
     \item \textbf{Integracja z bazami danych:} Wsparcie dla wielu popularnych baz danych, zarówno relacyjnych, jak i nierelacyjnych.
     \item \textbf{Bezpieczeństwo:} Łatwa integracja z Spring Security umożliwia dodawanie funkcji bezpieczeństwa do aplikacji.
 \end{itemize}
 
-\item \textbf{Zastosowania:} Spring Boot jest niezwykle wszechstronny. Wykorzystywany jest do tworzenia aplikacji biznesowych, systemów e-commerce, aplikacji korporacyjnych oraz w rozwiązaniach opartych o mikroserwisy. Jego elastyczność i łatwość użycia sprawiają, że jest jednym z najpopularniejszych frameworków w świecie Javy.
+\item \textbf{Zastosowania:} Spring Boot jest niezwykle wszechstronny. Wykorzystywany jest do tworzenia aplikacji biznesowych, systemów e-commerce, aplikacji korporacyjnych oraz w rozwiązaniach opartych o mikroserwisy. Jego elastyczność i łatwość użycia sprawiają, że jest jednym z najpopularniejszych frameworków w świecie Javy \cite{springbootSpecs}.
 \end{itemize}
 
 \section{Lombok}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.4\linewidth]{./img/lombok.png}
-    \caption{Logo biblioteki Lombok \cite{lombok}}
+    \caption{Logo biblioteki Lombok (źródło: https://avatars.githubusercontent.com)}
     \label{fig:Lombok}
 \end{figure}
-Biblioteka Lombok to narzędzie dla języka Java, które znacząco upraszcza proces tworzenia kodu poprzez eliminację powtarzalnych fragmentów, takich jak gettery, settery, konstruktory czy metody hashCode() i equals(). Te często powtarzające się fragmenty są nieodłącznym elementem tradycyjnych aplikacji Java, ale dzięki Lombokowi można je zastąpić kilkoma adnotacjami, co sprawia, że kod staje się bardziej zwięzły i czytelny.
+Biblioteka Lombok to narzędzie dla języka Java, które znacząco upraszcza proces tworzenia kodu poprzez eliminację powtarzalnych fragmentów, takich jak gettery, settery, konstruktory czy metody \textit{hashCode()} i \textit{equals()}. Te często powtarzające się fragmenty są nieodłącznym elementem tradycyjnych aplikacji Java, ale dzięki Lombokowi można je zastąpić kilkoma adnotacjami, co sprawia, że kod staje się bardziej zwięzły i czytelny.
 
 Główne cechy i zalety Lomboka:
 
 \begin{itemize}
-\item \textbf{Automatyczna generacja kodu:} Lombok automatycznie generuje kod dla wielu powszechnie używanych funkcji, takich jak gettery, settery, konstruktory czy metody toString(). Wystarczy dodać odpowiednią adnotację do klasy lub pola, a Lombok zajmie się resztą.
+\item \textbf{Automatyczna generacja kodu:} Lombok automatycznie generuje kod dla wielu powszechnie używanych funkcji, takich jak gettery(metody zwracające wartości prywatnych pól), settery(metody ustawiające pola prywatne), konstruktory czy metody \textit{toString()}. Wystarczy dodać odpowiednią adnotację do klasy lub pola, a Lombok zajmie się resztą.
 
-\item \textbf{Zwięzłość:} Dzięki Lombokowi, klasy stają się znacznie krótsze i bardziej zrozumiałe. Na przykład, zamiast ręcznie pisać cały kod dla gettera i settera, można po prostu użyć adnotacji @Getter i @Setter.
+\item \textbf{Zwięzłość:} Dzięki Lombokowi, klasy stają się znacznie krótsze i bardziej zrozumiałe. Na przykład, zamiast ręcznie pisać cały kod dla gettera i settera, można po prostu użyć adnotacji \textit{@Getter} i \textit{@Setter}.
 
 \item \textbf{Redukcja błędów}: Ręczne pisanie powtarzalnego kodu jest podatne na błędy. Lombok redukuje ryzyko wprowadzenia błędów poprzez automatyzację tego procesu.
 
@@ -90,18 +91,18 @@ Przykłady użycia Lomboka:
 \item \textbf{@Data:} Jest to jedna z najbardziej wszechstronnych adnotacji w Lomboku. Generuje gettery, settery, hashCode(), equals() oraz toString() dla całej klasy.
 \item \textbf{@Slf4j:} Dodaje loggera do klasy, co jest
 \end{itemize} przydatne w aplikacjach korzystających z logowania.
-Mimo wielu zalet, warto również pamiętać o pewnych ograniczeniach i potencjalnych problemach związanych z używaniem Lomboka, takich jak kompatybilność z niektórymi narzędziami czy trudności w debugowaniu automatycznie wygenerowanego kodu. Niemniej jednak, dla wielu programistów korzyści płynące z użycia Lomboka przeważają nad jego wadami.
+Mimo wielu zalet, warto również pamiętać o pewnych ograniczeniach i potencjalnych problemach związanych z używaniem Lomboka, takich jak kompatybilność z niektórymi narzędziami czy trudności w debugowaniu automatycznie wygenerowanego kodu\cite{lombokSpecs}.
 
 \section{Liquibase}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.4\linewidth]{./img/liquibase.png}
-    \caption{Logo narzędzia Liquibase \cite{liquibase}}
+    \caption{Logo narzędzia Liquibase (źródło: https://encrypted-tbn0.gstatic.com)}
     \label{fig:Liquibase}
 \end{figure}
 Liquibase to otwarte narzędzie do zarządzania i śledzenia zmian w bazie danych. Umożliwia programistom kontrolę wersji schematu bazy danych, co jest niezbędne w dynamicznie rozwijających się aplikacjach, gdzie struktura bazy danych może ulegać częstym modyfikacjom.
 
-Główne cechy i zalety Liquibase:
+Główne cechy i zalety Liquibase to między innymi:
 
 \begin{itemize}
 \item \textbf{Kontrola wersji schematu bazy danych:} Podobnie jak systemy kontroli wersji dla kodu źródłowego, Liquibase pozwala śledzić, dokumentować i cofać zmiany w bazie danych.
@@ -123,13 +124,13 @@ Przykłady użycia Liquibase:
 
 \item \textbf{Rollback:} Jeśli wprowadzona zmiana powoduje problemy, Liquibase umożliwia łatwe cofnięcie tej zmiany.
 \end{itemize}
-Liquibase, podobnie jak każde narzędzie, ma pewne ograniczenia. Może wymagać pewnego nakładu pracy przy konfiguracji, a także pewnej krzywej uczenia się, zwłaszcza dla tych, którzy nie są zaznajomieni z kontrolą wersji dla baz danych. Jedną z wielu wad przy budowie tej aplikacji było brak integracji z Firebase. Niemniej jednak, dla wielu zespołów deweloperskich korzyści płynące z użycia Liquibase, takie jak spójność, powtarzalność i kontrola nad zmianami w bazie danych, przeważają nad potencjalnymi wadami.
+Liquibase, podobnie jak każde narzędzie, ma pewne ograniczenia. Może wymagać pewnego nakładu pracy przy konfiguracji, a także pewnej krzywej uczenia się, zwłaszcza dla tych, którzy nie są zaznajomieni z kontrolą wersji dla baz danych. Jedną z wad przy budowie tej aplikacji był brak integracji z Firebase. Dla wielu zespołów deweloperskich korzyści płynące z użycia Liquibase, takie jak spójność, powtarzalność i kontrola nad zmianami w bazie danych, dają dużi\cite{liquibaseSpecs}.
 
 \section{TypeScript}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\linewidth]{./img/typescript.png}
-    \caption{Logo języka TypeScript \cite{typescript}}
+    \caption{Logo języka TypeScript (źródło: https://blog.toothpickapp.com)}
     \label{fig:TypeScript}
 \end{figure}
 TypeScript to język programowania opracowany przez Microsoft, który rozszerza JavaScript o opcjonalne typowanie statyczne i inne funkcje. Jego głównym celem jest ułatwienie tworzenia dużych i złożonych aplikacji w JavaScript, zapewniając narzędzia i funkcje, które pomagają w identyfikacji błędów na wczesnym etapie procesu deweloperskiego.
@@ -149,7 +150,7 @@ Główne cechy i zalety TypeScript:
 \item \textbf{Wsparcie dla typów zewnętrznych:} Społeczność TypeScript dostarcza definicje typów dla wielu popularnych bibliotek JavaScript, co ułatwia ich używanie w projektach TypeScript.
 \end{itemize}
 
-Przykłady użycia TypeScript:
+Przykłady użycia języka TypeScript to:
 
 \begin{itemize}
 \item \textbf{Aplikacje jednostronicowe (SPA):} TypeScript jest często używany do tworzenia zaawansowanych aplikacji internetowych, takich jak Angular, React czy Vue.
@@ -157,18 +158,18 @@ Przykłady użycia TypeScript:
 \item \textbf{Aplikacje serwerowe:} Dzięki integracji z Node.js, TypeScript jest również używany do tworzenia aplikacji serwerowych.
 \end{itemize}
 
-Wprowadzenie TypeScript do istniejącego projektu JavaScript może wymagać pewnych modyfikacji w kodzie. Ponadto, choć opcjonalne typowanie jest jednym z głównych atutów TypeScript, może również wprowadzić pewną złożoność, zwłaszcza dla tych, którzy są nowi w świecie silnie typowanych języków. Niemniej jednak, dla wielu deweloperów korzyści płynące z użycia TypeScript, takie jak lepsza organizacja kodu, łatwiejsze debugowanie i większa produktywność, przeważają nad potencjalnymi wadami.
+Wprowadzenie TypeScript do istniejącego projektu JavaScript może wymagać pewnych modyfikacji w kodzie. Ponadto, choć opcjonalne typowanie jest jednym z głównych atutów TypeScript, może również wprowadzić pewną złożoność, zwłaszcza dla tych, którzy są nowi w świecie silnie typowanych języków. Niemniej jednak, dla wielu deweloperów korzyści płynące z użycia TypeScript, takie jak lepsza organizacja kodu, łatwiejsze debugowanie i większa produktywność przeważają nad potencjalnymi wadami\cite{typescriptSpecs}.
 
 \section{Angular}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\linewidth]{./img/angular.png}
-    \caption{Logo frameworku Angular \cite{angular}}
+    \caption{Logo frameworku Angular (źródło: https://miro.medium.com)}
     \label{fig:Angular}
 \end{figure}
 Angular to popularny framework do tworzenia aplikacji internetowych opracowany i utrzymywany przez Google. Został zaprojektowany z myślą o tworzeniu dynamicznych, jednostronicowych aplikacji internetowych (SPA) i oferuje zestaw narzędzi do efektywnego zarządzania danymi, logiką biznesową i interfejsem użytkownika.
 
-Główne cechy i zalety Angulara:
+Główne cechy i zalety frameworku Angular to między innymi:
 \begin{itemize}
 \item \textbf{Komponentowy system architektury:} Angular opiera się na komponentach, które są niezależnymi jednostkami logiki i interfejsu użytkownika. Umożliwia to modularność, łatwe testowanie i ponowne użycie kodu.
 
@@ -185,7 +186,7 @@ Główne cechy i zalety Angulara:
 \item \textbf{Wsparcie dla programowania reaktywnego:} Dzięki integracji z biblioteką RxJS, Angular umożliwia tworzenie reaktywnych aplikacji opartych na strumieniach danych.
 \end{itemize}
 
-Przykłady użycia Angulara:
+Przykłady użycia Angulara to na przykład:
 \begin{itemize}
 \item \textbf{Aplikacje korporacyjne:} Dzięki swojej skalowalności i wsparciu dla modułowości, Angular jest często wybierany do tworzenia dużych aplikacji korporacyjnych.
 
@@ -194,19 +195,19 @@ Przykłady użycia Angulara:
 \item \textbf{Aplikacje mobilne:} Za pomocą narzędzi takich jak Ionic, Angular może być również używany do tworzenia aplikacji mobilnych.
 \end{itemize}
 
-Krzywa uczenia się Angulara jest stosunkowo stroma, zwłaszcza dla tych, którzy są nowi w świecie frameworków front-endowych. Ponadto, choć Angular jest bardzo wszechstronny, może być "zbyt ciężki" dla prostych projektów, gdzie lżejsze rozwiązania, takie jak React czy Vue, mogą być bardziej odpowiednie. Niemniej jednak, dla wielu deweloperów korzyści płynące z użycia Angulara, takie jak jego wszechstronność, wsparcie społeczności i ciągłe aktualizacje, przeważają nad potencjalnymi wadami.
+Krzywa uczenia się Angulara jest stosunkowo stroma, zwłaszcza dla tych, którzy są nowi w świecie frameworków front-endowych. Ponadto, choć Angular jest bardzo wszechstronny, może być ,,zbyt ciężki'' dla prostych projektów, gdzie lżejsze rozwiązania, takie jak React czy Vue, mogą być bardziej odpowiednie. Jednak dla wielu deweloperów korzyści płynące z użycia Angulara, takie jak jego wszechstronność, wsparcie społeczności i ciągłe aktualizacje przeważają nad potencjalnymi wadami\cite{angularSpecs}.
 
 \section{PrimeNG}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\linewidth]{./img/primeng.png}
-    \caption{Logo narzędzia PrimeNG \cite{primeng}}
+    \caption{Logo narzędzia PrimeNG (źródło: https://primefaces.org)}
     \label{fig:PrimeNG}
 \end{figure}
 
 PrimeNG to zestaw komponentów interfejsu użytkownika dla Angulara. Opracowany przez PrimeTek, PrimeNG dostarcza bogatą kolekcję gotowych do użycia komponentów, które ułatwiają szybkie tworzenie zaawansowanych aplikacji internetowych z wykorzystaniem Angulara.
 
-Główne cechy i zalety PrimeNG:
+Główne cechy i zalety narzędzia PrimeNG to między innymi:
 
 \begin{itemize}
 \item \textbf{Bogata kolekcja komponentów:} PrimeNG oferuje szeroką gamę komponentów, od podstawowych elementów, takich jak przyciski czy listy, po zaawansowane komponenty, takie jak wykresy, drzewa czy tabelki z funkcją paginacji.
@@ -223,7 +224,7 @@ Główne cechy i zalety PrimeNG:
 \item \textbf{Wsparcie społeczności i dokumentacja:} PrimeNG posiada aktywną społeczność, która regularnie dzieli się wskazówkami i rozwiązaniami problemów. Ponadto, biblioteka ta jest dobrze udokumentowana, co ułatwia jej wdrożenie i użycie.
 \end{itemize}
 
-Przykłady użycia PrimeNG:
+Przykłady użycia narzędzia PrimeNG w aplikacjach webowych to:
 
 \begin{itemize}
 \item \textbf{Zaawansowane panele administracyjne:} Dzięki szerokiej gamie komponentów, takich jak tabele, wykresy czy formularze, PrimeNG jest idealnym wyborem do tworzenia zaawansowanych paneli administracyjnych.
@@ -233,7 +234,7 @@ Przykłady użycia PrimeNG:
 \item \textbf{Platformy e-commerce:} Komponenty takie jak karuzele produktów, listy rozwijane czy kalendarze czynią PrimeNG atrakcyjnym wyborem dla platform e-commerce.
 \end{itemize}
 
-PrimeNG może wymagać pewnego nakładu pracy przy konfiguracji, a niektóre komponenty mogą nie być dostosowane do bardzo specyficznych potrzeb. Niemniej jednak, dla wielu deweloperów korzyści płynące z użycia PrimeNG, takie jak bogata kolekcja komponentów, wsparcie społeczności i ciągłe aktualizacje, przeważają nad potencjalnymi wadami.
+PrimeNG może wymagać pewnego nakładu pracy przy konfiguracji, a niektóre komponenty mogą nie być dostosowane do bardzo specyficznych potrzeb. Korzyści płynące z użycia PrimeNG, takie jak bogata kolekcja komponentów, wsparcie społeczności i ciągłe aktualizacje, przeważają przy wyborze odpowiedniego narzędzia\cite{primengSpecs}.
 
 \section{Podsumowanie}
 

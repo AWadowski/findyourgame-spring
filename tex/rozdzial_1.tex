@@ -14,12 +14,12 @@ Przy tworzeniu aplikacji webowej język Java służy nam  do wystawienia tzw. ko
 
 \subsection{Bazy danych w aplikacjach webowych}
 
-W ten sposób jesteśmy w stanie stworzyć strony, lecz bez możliwości zbierania danych w żaden sposób. Do gromadzenia danych potrzebujemy więc bazy. Bazy danych możemy podzielić według kryteriów. Z uwagi na miejsce inicjalizacji możemy rozważać lokalne bazy danych lub typu klient-serwer. W pierwszym rodzaju są to najprostsze zbiory, które są gromadzone na jednym komputerze, a wszelkie zmiany będzie nanosił użytkownik. Drugi rodzaj, który jest przechowywany w zasobach serwera, jest traktowany jako osobny komputer,a dostęp do niego możemy uzyskać poprzez połączenie sieciowe. Ze względu na architekturę wyróżniamy dwa typy: jednowarstwowe oraz dwuwarstwowe. Bazy jednowarstwowe wykonują zmiany od razu, w przeciwieństwie do drugiego typu, w którym połączenie z serwerem odbywa się za pomocą specjalnego sterownika, a kontrolowanie danych zależy od klienta. Ostatnim podziałem baz danych jest podział względem struktur danych, których używają. Jedne zwane prostymi lub kartotekowymi określają każdą tablicę jako osobny dokument, przez co nie ma między nimi żadnego połączenia. Drugie zwane relacyjnymi bazami danych określają wiele tablic, które mogą się łączyć. Na przykład dla książki możemy wyświetlić jej zawartość, ale również z innej tabeli możemy wyświetlić bibliotekę, w której się znajduje. Do takiej operacji potrzebujemy unikalnego kodu oraz relacji między tabelami. Trzecim typem są bazy obiektowe, które są zdefiniowane tylko jednym standardem z 1993 roku. Ostatnim typem są strumieniowe bazy danych. Przedstawiają one dane w postaci zbioru strumieni. System zarządzania jest nazwany strumieniowym systemem zarządzania danymi (ang. Data Stream Management System). Jest to nowy typ, który znajduje się w fazie prototypowej i nie istnieją dla niego żadne rozwiązania komercyjne.
+W ten sposób jesteśmy w stanie stworzyć strony, lecz bez możliwości zbierania danych w żaden sposób. Do gromadzenia danych potrzebujemy więc bazy. Bazy danych możemy podzielić według kryteriów. Z uwagi na miejsce inicjalizacji możemy rozważać lokalne bazy danych lub typu klient-serwer. W pierwszym rodzaju są to najprostsze zbiory, które są gromadzone na jednym komputerze, a wszelkie zmiany będzie nanosił użytkownik. Drugi rodzaj, który jest przechowywany w zasobach serwera, jest traktowany jako osobny komputer, a dostęp do niego możemy uzyskać poprzez połączenie sieciowe. Ze względu na architekturę wyróżniamy dwa typy: jednowarstwowe oraz dwuwarstwowe. Bazy jednowarstwowe wykonują zmiany od razu, w przeciwieństwie do drugiego typu, w którym połączenie z serwerem odbywa się za pomocą specjalnego sterownika, a kontrolowanie danych zależy od klienta. Ostatnim podziałem baz danych jest podział względem struktur danych, których używają. Jedne zwane prostymi lub kartotekowymi określają każdą tablicę jako osobny dokument, przez co nie ma między nimi żadnego połączenia. Drugie zwane relacyjnymi bazami danych określają wiele tablic, które mogą się łączyć. Na przykład dla książki możemy wyświetlić jej zawartość, ale również z innej tabeli możemy wyświetlić bibliotekę, w której się znajduje. Do takiej operacji potrzebujemy unikalnego kodu oraz relacji między tabelami. Trzecim typem są bazy obiektowe, które są zdefiniowane tylko jednym standardem z 1993 roku. Ostatnim typem są strumieniowe bazy danych. Przedstawiają one dane w postaci zbioru strumieni. System zarządzania jest nazwany strumieniowym systemem zarządzania danymi (ang. Data Stream Management System). Jest to nowy typ, który znajduje się w fazie prototypowej i nie istnieją dla niego żadne rozwiązania komercyjne.
 
 \section{Projektowanie aplikacji}
 \subsection{Etap planowania i analizy}
 
-W fazie planowania i analizy kluczową rolę odgrywają analitycy, którzy spotykają się z klientem w celu omówienia kluczowych aspektów projektu. W tym czasie omawiane są funkcjonalności, wymagania oraz oczekiwania względem wydajności aplikacji. Jest to etap, w którym zbierane są wszystkie niezbędne informacje, potrzebne w kolejnych fazach projektu. Nawet jeśli tworzymy aplikację na własne potrzeby, warto poświęcić czas na dokładne zrozumienie i zdefiniowanie tych trzech kluczowych punktów. Zapisanie ich pomoże w późniejszym etapie projektowania i implementacji. Na koniec tej fazy powstaje ogólny zarys projektu, który będzie służył jako drogowskaz w kolejnych etapach. \cite{Etapy}
+W fazie planowania i analizy kluczową rolę odgrywają analitycy, którzy spotykają się z klientem w celu omówienia kluczowych aspektów projektu. W tym czasie omawiane są funkcjonalności, wymagania oraz oczekiwania względem wydajności aplikacji. Jest to etap, w którym zbierane są wszystkie niezbędne informacje, potrzebne w kolejnych fazach projektu. Nawet jeśli tworzymy aplikację na własne potrzeby, warto poświęcić czas na dokładne zrozumienie i zdefiniowanie tych trzech kluczowych punktów. Zapisanie ich pomoże w późniejszym etapie projektowania i implementacji. Na koniec tej fazy powstaje ogólny zarys projektu, który będzie służył jako drogowskaz w kolejnych etapach\cite{Etapy}.
 
 \subsection{Projektowanie UX/UI}
 
@@ -53,18 +53,20 @@ Tworzenie aplikacji webowej to proces skomplikowany i wieloetapowy, który wymag
 
 Frontend to część aplikacji, z którą bezpośrednio kontaktuje się użytkownik. Obejmuje ona interfejs użytkownika (UI) oraz wszystkie elementy wizualne, które są prezentowane w przeglądarce. Główne technologie używane w frontendzie to:
 
-HTML -- język znaczników, który opisuje strukturę strony.
-CSS -- służy do stylizacji elementów HTML, decydując o wyglądzie strony.
-JavaScript (lub TypeScript w przypadku Angulara) - język programowania, który pozwala na tworzenie interaktywnych elementów strony.
+\begin{itemize}
+\item \textbf{HTML} -- język znaczników, który opisuje strukturę strony.
+\item \textbf{CSS} -- służy do stylizacji elementów HTML, decydując o wyglądzie strony.
+\item \textbf{JavaScript (lub TypeScript w przypadku Angulara)} - język programowania, który pozwala na tworzenie interaktywnych elementów strony.
+\end{itemize}
 
 \subsection{Backend}
 
 Backend to serwerowa część aplikacji, która zajmuje się przetwarzaniem danych, komunikacją z bazą danych i realizacją logiki biznesowej. Główne składniki backendu to:
 
 \begin{itemize}
-\item \textbf{Serwer} - maszyna lub oprogramowanie, które obsługuje żądania od klientów i zwraca odpowiednie dane.
-\item \textbf{Baza danych} - system przechowywania danych, który pozwala na ich szybkie wyszukiwanie, modyfikowanie i przechowywanie.
-\item \textbf{API (Application Programming Interface)} - zestaw reguł i mechanizmów, które pozwalają różnym częściom oprogramowania komunikować się ze sobą.
+\item \textbf{Serwer} -- maszyna lub oprogramowanie, które obsługuje żądania od klientów i zwraca odpowiednie dane.
+\item \textbf{Baza danych} -- system przechowywania danych, który pozwala na ich szybkie wyszukiwanie, modyfikowanie i przechowywanie.
+\item \textbf{API (Application Programming Interface)} -- zestaw reguł i mechanizmów, które pozwalają różnym częściom oprogramowania komunikować się ze sobą.
 \end{itemize}
 
 
@@ -75,18 +77,23 @@ Budowa aplikacji webowej to nie tylko kwestia techniczna, ale także planowania,
 W dzisiejszych czasach, kiedy konkurencja w świecie aplikacji internetowych jest ogromna, nie wystarczy stworzyć funkcjonalną stronę. Aplikacja musi być również szybka, responsywna i przede wszystkim bezpieczna. W tym rozdziale omówimy kluczowe aspekty optymalizacji i zabezpieczania aplikacji webowych.
 
 \subsection{Optymalizacja}
-\cite{optymalizacja}
-Minimalizacja i kompresja plików - zmniejszenie rozmiaru plików CSS, JavaScript i obrazów może znacząco przyspieszyć ładowanie strony.
+Poniżej przedstawione są kroki, które wpływają na pozytywną optymalizację budowanej aplikacji:
+\begin{itemize}
+\item \textbf{Minimalizacja i kompresja plików} -- zmniejszenie rozmiaru plików CSS, JavaScript i obrazów może znacząco przyspieszyć ładowanie strony.
 Wykorzystanie pamięci podręcznej - przechowywanie często używanych danych w pamięci podręcznej przeglądarki pozwala na szybsze ładowanie strony podczas kolejnych wizyt.
-Optymalizacja obrazów - stosowanie odpowiedniego formatu i rozmiaru obrazów, a także leniwe ładowanie (ang. lazy loading), które polega na ładowaniu obrazów dopiero wtedy, gdy są one widoczne dla użytkownika.
-Optymalizacja baz danych - regularne indeksowanie, czyszczenie i aktualizacja baz danych zapewniają ich wydajne działanie.
+\item \textbf{Optymalizacja obrazów} -- stosowanie odpowiedniego formatu i rozmiaru obrazów, a także leniwe ładowanie (ang. lazy loading), które polega na ładowaniu obrazów dopiero wtedy, gdy są one widoczne dla użytkownika.
+\item \textbf{Optymalizacja baz danych} -- regularne indeksowanie, czyszczenie i aktualizacja baz danych zapewniają ich wydajne działanie\cite{optymalizacja}.
+\end{itemize}
 
 \subsection{Bezpieczeństwo}
-\cite{sekurakBezpieczenstwo}
-Szyfrowanie - stosowanie protokołu HTTPS zapewnia, że dane przesyłane między serwerem a klientem są zaszyfrowane i trudne do przechwycenia.
-Autentykacja i autoryzacja - upewnienie się, że tylko uprawnieni użytkownicy mają dostęp do pewnych zasobów i funkcji aplikacji.
-Zabezpieczenie przed atakami - takimi jak SQL Injection, Cross-Site Scripting (XSS) czy Cross-Site Request Forgery (CSRF). Wymaga to stałego monitorowania, aktualizacji oprogramowania i stosowania najlepszych praktyk programistycznych.
-Regularne kopie zapasowe - w przypadku awarii lub ataku, ważne jest posiadanie aktualnych kopii zapasowych danych i kodu aplikacji, aby móc szybko przywrócić jej działanie.
+Podstawowe zabezpieczenia wykorzystywane w aplikacjach to:
+
+\begin{itemize}
+\item \textbf{Szyfrowanie} -- stosowanie protokołu HTTPS zapewnia, że dane przesyłane między serwerem a klientem są zaszyfrowane i trudne do przechwycenia.
+\item \textbf{Autentykacja i autoryzacja - upewnienie się, że tylko uprawnieni użytkownicy mają dostęp do pewnych zasobów i funkcji aplikacji.
+Zabezpieczenie przed atakami} -- takimi jak SQL Injection, Cross-Site Scripting (XSS) czy Cross-Site Request Forgery (CSRF). Wymaga to stałego monitorowania, aktualizacji oprogramowania i stosowania najlepszych praktyk programistycznych.
+\item \textbf{Regularne kopie zapasowe} -- w przypadku awarii lub ataku, ważne jest posiadanie aktualnych kopii zapasowych danych i kodu aplikacji, aby móc szybko przywrócić jej działanie\cite{sekurakBezpieczenstwo}.
+\end{itemize}
 
 \subsection{Monitoring i aktualizacje}
 
@@ -98,9 +105,9 @@ Podsumowując, tworzenie aplikacji webowej to jedno, ale jej optymalizacja i zab
 
 Współczesne aplikacje webowe rzadko funkcjonują w izolacji. Często integrują się z różnymi zewnętrznymi narzędziami, platformami i serwisami, aby rozszerzyć swoje funkcjonalności, poprawić wydajność i dostarczyć użytkownikom bardziej kompleksowe doświadczenie. W tej sekcji przyjrzymy się kluczowym aspektom integracji aplikacji webowych z innymi systemami.
 
-\subsection{API - klucz do integracji \cite{apiIntegration}}
+\subsection{API - klucz do integracji}
 
-API, czyli interfejs programistyczny aplikacji, to zestaw reguł i definicji, które pozwalają różnym aplikacjom komunikować się ze sobą. Dzięki API, aplikacja webowa może na przykład pobierać dane z mediów społecznościowych, korzystać z funkcji płatności czy integrować się z systemami zarządzania treścią.
+API, czyli interfejs programistyczny aplikacji, to zestaw reguł i definicji, które pozwalają różnym aplikacjom komunikować się ze sobą. Dzięki API, aplikacja webowa może na przykład pobierać dane z mediów społecznościowych, korzystać z funkcji płatności czy integrować się z systemami zarządzania treścią\cite{apiIntegration}.
 
 \subsection{Popularne integracje}
 
@@ -133,21 +140,20 @@ Bazy relacyjne, takie jak Oracle Database, opierają się na strukturze tabelary
 \item \textbf{Struktura tabelaryczna:} Dane są przechowywane w tabelach, które mają zdefiniowaną strukturę kolumn.
 \item \textbf{Relacje między tabelami:} Możliwość tworzenia relacji między różnymi tabelami za pomocą kluczy obcych.
 \item \textbf{Język zapytań SQL:} Umożliwia tworzenie, modyfikowanie, usuwanie i wyszukiwanie danych za pomocą języka SQL.
-\item \textbf{Transakcyjność:} Gwarancja integralności danych poprzez zastosowanie mechanizmów transakcyjnych.
+\item \textbf{Transakcyjność:} Gwarancja integralności danych poprzez zastosowanie mechanizmów transakcyjnych\cite{oracleDb}.
 \end{itemize}
-\cite{oracleDb}
 
 \textbf{Zalety Oracle Database:}
 \begin{itemize}
-\item Zaawansowane funkcje zarządzania i optymalizacji.
-\item Wysoka wydajność i skalowalność.
-\item Bogate wsparcie dla procedur składowanych i funkcji.
+\item Zaawansowane funkcje zarządzania i optymalizacji
+\item Wysoka wydajność i skalowalność
+\item Bogate wsparcie dla procedur składowanych i funkcji
 \end{itemize}
 
 \textbf{Wady Oracle Database:}
 \begin{itemize}
-\item Wysokie koszty licencji.
-\item Złożoność konfiguracji i zarządzania.
+\item Wysokie koszty licencji
+\item Złożoność konfiguracji i zarządzania
 \end{itemize}
 
 \subsection{Bazy nierelacyjne: Firebase}
@@ -163,19 +169,18 @@ Firebase, będący częścią ekosystemu Google, jest bazą danych typu NoSQL, k
 
 \textbf{Zalety Firebase:}
 \begin{itemize}
-\item Szybkość i łatwość wdrożenia.
-\item Elastyczność schematu.
-\item Wysoka dostępność i redundancja.
+\item Szybkość i łatwość wdrożenia
+\item Elastyczność schematu
+\item Wysoka dostępność i redundancja
 \end{itemize}
 
 \textbf{Wady Firebase:}
 \begin{itemize}
-\item Ograniczenia w zakresie zapytań złożonych.
-\item Koszty mogą rosnąć w miarę zwiększania się ilości danych i zapytań.
+\item Ograniczenia w zakresie zapytań złożonych
+\item Koszty mogą rosnąć w miarę zwiększania się ilości danych i zapytań\cite{firebaseDb}
 \end{itemize}
-\cite{firebaseDb}
 \subsection{Podsumowanie}
 
 Wybór między bazą relacyjną a nierelacyjną zależy od specyfiki projektu. Jeśli aplikacja wymaga skomplikowanych zapytań, relacji między danymi i transakcyjności, baza relacyjna jak Oracle może być lepszym wyborem. Jeśli natomiast priorytetem jest szybkość wdrożenia, elastyczność i skalowalność, Firebase może okazać się bardziej odpowiedni.
 
-W kontekście aplikacji wyszukującej gry według zadanych preferencji, jeśli dane o grach są złożone i wymagają relacji (np. gry powiązane z twórcami, gatunkami, recenzjami), Oracle Database może być lepszym wyborem. Jeśli jednak aplikacja ma charakter bardziej dynamiczny, z częstymi aktualizacjami i interakcją w czasie rzeczywistym, Firebase może być bardziej odpowiedni.
+W kontekście aplikacji wyszukującej gry według zadanych preferencji, jeśli dane o grach są złożone i wymagają relacji (np. gry powiązane z twórcami, gatunkami, recenzjami), Oracle Database może być lepszym wyborem. Jeśli jednak aplikacja ma charakter bardziej dynamiczny, z częstymi aktualizacjami i interakcją w czasie rzeczywistym, należy postawić na bazę danych Firebase od Google.
