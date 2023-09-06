@@ -40,5 +40,5 @@
 \contentsline {section}{\numberline {3.1}Backend}{17}{}%
 \contentsline {section}{\numberline {3.2}Frontend}{23}{}%
 \contentsline {chapter}{\numberline {4}Porównanie wydajności baz relacyjnych i nierelacyjnych}{27}{}%
-\contentsline {section}{\numberline {4.1}Sekcja}{27}{}%
+\contentsline {section}{\numberline {4.1}Wnioski z analizy czasu wyszukiwania między bazami}{27}{}%
 \contentsline {chapter}{Podsumowanie}{29}{}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  5 SEP 2023 22:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  6 SEP 2023 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -821,15 +821,32 @@ Package pdftex.def Info: ./img/secondpage.jpg  used on input line 411.
 
 ]
 Rozdzia\l  4.
-) (podsumowanie.tex [27] [28
 
-]) (bibliografia.tex [29] [30
+Underfull \hbox (badness 3058) in paragraph at lines 3--4
+[]\OT4/cmr/m/n/10 W po-przed-nich roz-dzia-ªach sku-pi-li-±my si¦ na po-rów-na-
+niu czy-sto teo-re-tycz-nym oraz
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 3--4
+\OT4/cmr/m/n/10 opó¹-nie-nia po-ª¡-cze-nia w obu przy-pad-kach s¡ po-rów-ny-wal
+ne, wi¦c skupmy si¦ na cza-sie
+ []
+
+<./img/wykres.jpg, id=126, 647.41875pt x 459.21562pt>
+File: ./img/wykres.jpg Graphic file (type jpg)
+<use ./img/wykres.jpg>
+Package pdftex.def Info: ./img/wykres.jpg  used on input line 9.
+(pdftex.def)             Requested size: 426.79135pt x 302.72588pt.
+[27 <./img/wykres.jpg>]) (podsumowanie.tex [28]) (bibliografia.tex [29
+
+]
+[30
 
 ]
 LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 
 5.
-
-(C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmtt.fd
+ (C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 Underfull \hbox (badness 2884) in paragraph at lines 18--19
@@ -864,10 +881,10 @@ mr/m/n/9 , $\OT4/cmtt/m/n/9 https : / / www . adservio . fr / post /
 
  [35] (solving.aux) ) 
 Here is how much of TeX's memory you used:
- 10169 strings out of 476339
- 164980 string characters out of 5788119
- 2267340 words of memory out of 5000000
- 30363 multiletter control sequences out of 15000+600000
+ 10177 strings out of 476339
+ 165129 string characters out of 5788119
+ 2266340 words of memory out of 5000000
+ 30370 multiletter control sequences out of 15000+600000
  528056 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,10n,82p,1940b,1658s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -890,9 +907,9 @@ s/type1/public/pl/plssbx10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/pl/plti10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/pl/plti9.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/pl/pltt9.pfb>
-Output written on solving.pdf (39 pages, 1196223 bytes).
+Output written on solving.pdf (39 pages, 1260651 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
+ 226 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
