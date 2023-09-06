@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  6 SEP 2023 11:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  6 SEP 2023 21:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -600,37 +600,37 @@ a-nia. Jego gªów-nym ce-lem jest
  []
 
 [4] [5]
-Underfull \hbox (badness 1728) in paragraph at lines 94--95
+Underfull \hbox (badness 1728) in paragraph at lines 93--94
 \OT4/cmr/m/n/10 For-gery (CSRF). Wy-maga to sta-ªego mo-ni-to-ro-wa-nia, ak-tu-
 ali-za-cji opro-gra-mo-wa-nia i
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 106--107
+Underfull \hbox (badness 1163) in paragraph at lines 105--106
 \OT4/cmr/m/n/10 ze-wn¦trz-nymi na-rz¦-dziami, plat-for-mami i ser-wi-sami, aby 
 roz-sze-rzy¢ swoje funk-cjo-nal-no-±ci,
  []
 
 [6]
-Underfull \hbox (badness 1496) in paragraph at lines 116--117
+Underfull \hbox (badness 1496) in paragraph at lines 115--116
 []\OT4/cmr/bx/n/10 Media spo-ªecz-no-±ciowe \OT4/cmr/m/n/10 - po-ª¡-cze-nie z F
 a-ce-bo-okiem, Twit-te-rem czy In-sta-gra-mem
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 116--117
+Underfull \hbox (badness 1057) in paragraph at lines 115--116
 \OT4/cmr/m/n/10 umo»-li-wia na przy-kªad udo-st¦p-nia-nie tre-±ci, lo-go-wa-nie
  za po-moc¡ konta w me-diach
  []
 
 
-Underfull \hbox (badness 4779) in paragraph at lines 129--130
+Underfull \hbox (badness 4779) in paragraph at lines 128--129
 \OT4/cmr/m/n/10 Podsumowuj¡c, in-te-gra-cja z in-nymi na-rz¦-dziami i ser-wi-sa
 mi po-zwala na wzbo-ga-ce-nie
  []
 
 
-Underfull \hbox (badness 1360) in paragraph at lines 129--130
+Underfull \hbox (badness 1360) in paragraph at lines 128--129
 \OT4/cmr/m/n/10 funk-cjo-nal-no-±ci apli-ka-cji we-bo-wej i do-star-cze-nie u»y
 t-kow-ni-kom bar-dziej za-awan-so-wa-nych i
  []
@@ -849,16 +849,16 @@ LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line
  (C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-Underfull \hbox (badness 2884) in paragraph at lines 18--19
-[]\OT4/cmr/m/n/9 Cechy bazy Oracle, \OT4/cmr/m/it/9 Oracle do-cu-men-ta-tion\OT
-4/cmr/m/n/9 , $\OT4/cmtt/m/n/9 https : / / docs . oracle . com / cd / E63057 _ 
-01 / doc . 30 /
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+\OT4/cmr/m/it/9 kodu\OT4/cmr/m/n/9 , https://weastronauts.com/jak-zwiekszyc-wyd
+ajnosc-aplikacji-webowych-dzieki-optymalizacji-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-\OT4/cmr/m/it/9 kodu\OT4/cmr/m/n/9 , https://weastronauts.com/jak-zwiekszyc-wyd
-ajnosc-aplikacji-webowych-dzieki-optymalizacji-
+Underfull \hbox (badness 2884) in paragraph at lines 24--25
+[]\OT4/cmr/m/n/9 Cechy bazy Oracle, \OT4/cmr/m/it/9 Oracle do-cu-men-ta-tion\OT
+4/cmr/m/n/9 , $\OT4/cmtt/m/n/9 https : / / docs . oracle . com / cd / E63057 _ 
+01 / doc . 30 /
  []
 
 
@@ -883,7 +883,7 @@ mr/m/n/9 , $\OT4/cmtt/m/n/9 https : / / www . adservio . fr / post /
 Here is how much of TeX's memory you used:
  10177 strings out of 476339
  165129 string characters out of 5788119
- 2266340 words of memory out of 5000000
+ 2267340 words of memory out of 5000000
  30370 multiletter control sequences out of 15000+600000
  528056 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -907,7 +907,7 @@ s/type1/public/pl/plssbx10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/pl/plti10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/pl/plti9.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/pl/pltt9.pfb>
-Output written on solving.pdf (39 pages, 1263692 bytes).
+Output written on solving.pdf (39 pages, 1263690 bytes).
 PDF statistics:
  226 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
