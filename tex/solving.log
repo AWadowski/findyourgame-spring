@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  6 SEP 2023 21:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  9 SEP 2023 12:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -752,13 +752,22 @@ lo-gii, klu-czem jest ich pra-wi-dªowe
 
 ) (rozdzial_3.tex [16]
 Rozdzia\l  3.
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
-0.
-(C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
-File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+(C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 10.
+(C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 
+9.
+
+(C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmtt.fd
+File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+
+LaTeX Font Warning: Font shape `OT4/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT4/cmtt/m/n' tried instead on input line 9.
+
 
 Underfull \hbox (badness 3138) in paragraph at lines 29--30
 \OT4/cmr/m/n/10 Po uwzgl¦d-nie-niu za-le»-no-±ci usta-wi-ªem kon-fi-gu-ra-cj¦ w
@@ -767,16 +776,10 @@ Underfull \hbox (badness 3138) in paragraph at lines 29--30
 
 [17
 
-]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 8
-2.
- (C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
-File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
+] [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[18]
+ [19]
 Underfull \hbox (badness 3302) in paragraph at lines 134--135
 []\OT4/cmr/m/it/10 firebaseApp() \OT4/cmr/m/n/10 -- me-toda ini-cja-li-zu-j¡ca 
 po-ª¡-cze-nie z baz¡ Fi-re-base, wy-wo-ªuje klas¦
@@ -788,10 +791,15 @@ Underfull \hbox (badness 1484) in paragraph at lines 134--135
 -po-wied-nich ,,cre-den-tials'' oraz ,,da-ta-ba-seUrl''
  []
 
-[19] [20] [21]
+[20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
+ [21]
+[22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+[24]
 Underfull \hbox (badness 2050) in paragraph at lines 355--356
 \OT4/cmr/m/n/10 z naj-po-pu-lar-niej-szych na-rz¦-dzi do two-rze-nia dy-na-micz
 -nych i za-awan-so-wa-nych in-ter-fej-sów
@@ -803,21 +811,22 @@ Underfull \hbox (badness 1603) in paragraph at lines 357--358
 zy-stano bi-blio-tek¦ kom-po-nen-tów
  []
 
-<./img/stronaglowna.jpg, id=112, 1385.175pt x 705.38531pt>
+<./img/stronaglowna.jpg, id=115, 1385.175pt x 705.38531pt>
 File: ./img/stronaglowna.jpg Graphic file (type jpg)
 <use ./img/stronaglowna.jpg>
 Package pdftex.def Info: ./img/stronaglowna.jpg  used on input line 363.
 (pdftex.def)             Requested size: 426.79135pt x 217.33253pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[23] [24 <./img/stronaglowna.jpg>]
+[25 <./img/stronaglowna.jpg>]
 <./img/secondpage.jpg, id=119, 1168.365pt x 668.4975pt>
 File: ./img/secondpage.jpg Graphic file (type jpg)
 <use ./img/secondpage.jpg>
 Package pdftex.def Info: ./img/secondpage.jpg  used on input line 411.
 (pdftex.def)             Requested size: 426.79135pt x 244.19847pt.
-) (rozdzial_4.tex [25 <./img/secondpage.jpg>] [26
+) (rozdzial_4.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26] [27 <./img/secondpage.jpg>] [28
 
 ]
 Rozdzia\l  4.
@@ -833,22 +842,19 @@ Underfull \hbox (badness 1655) in paragraph at lines 3--4
 ne, wi¦c skupmy si¦ na cza-sie
  []
 
-<./img/wykres.jpg, id=126, 647.41875pt x 459.21562pt>
+<./img/wykres.jpg, id=130, 659.46375pt x 496.85625pt>
 File: ./img/wykres.jpg Graphic file (type jpg)
 <use ./img/wykres.jpg>
 Package pdftex.def Info: ./img/wykres.jpg  used on input line 9.
-(pdftex.def)             Requested size: 426.79135pt x 302.72588pt.
-[27 <./img/wykres.jpg>]) (podsumowanie.tex [28]) (bibliografia.tex [29
+(pdftex.def)             Requested size: 341.43437pt x 257.25226pt.
+
+Underfull \vbox (badness 4168) has occurred while \output is active []
+
+ [29 <./img/wykres.jpg>]) (podsumowanie.tex [30]) (bibliografia.tex [31
+
+] [32
 
 ]
-[30
-
-]
-LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 
-5.
- (C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/polski\ot4cmtt.fd
-File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 \OT4/cmr/m/it/9 kodu\OT4/cmr/m/n/9 , https://weastronauts.com/jak-zwiekszyc-wyd
 ajnosc-aplikacji-webowych-dzieki-optymalizacji-
@@ -867,49 +873,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 mr/m/n/9 , $\OT4/cmtt/m/n/9 https : / / www . adservio . fr / post /
  []
 
-) [31] [32
+) [33] [34
 
 ] (solving.lot)
 \tf@lot=\write6
 \openout6 = `solving.lot'.
 
- [33] [34
+ [35] [36
 
 ] (solving.lof)
 \tf@lof=\write7
 \openout7 = `solving.lof'.
 
- [35] (solving.aux) ) 
+ [37] (solving.aux) ) 
 Here is how much of TeX's memory you used:
- 10177 strings out of 476339
- 165129 string characters out of 5788119
- 2267340 words of memory out of 5000000
- 30370 multiletter control sequences out of 15000+600000
- 528056 words of font info for 79 fonts, out of 8000000 for 9000
+ 10779 strings out of 476339
+ 173541 string characters out of 5788119
+ 2176340 words of memory out of 5000000
+ 30972 multiletter control sequences out of 15000+600000
+ 528015 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,10n,82p,1940b,1658s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,10n,82p,1940b,1736s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dv
 ips/pl/pltt.enc}{C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/p
-l/plit.enc} <C:\Users\adamw\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
-i600\tcrm0900.pk>{C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
-pl/plrm.enc} <C:\Users\adamw\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
-pi600\tcrm1000.pk><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmmi9.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy9.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/pl/plbx10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/pl/plbx12.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/pl/plr10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/pl/plr8.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/pl/plr9.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/font
-s/type1/public/pl/plss10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/font
-s/type1/public/pl/plss17.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/font
-s/type1/public/pl/plssbx10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/pl/plti10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/pl/plti9.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/pl/pltt9.pfb>
-Output written on solving.pdf (39 pages, 1263690 bytes).
+l/plit.enc}{C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plr
+m.enc} <C:\Users\adamw\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm1000.pk><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl
+/plbx10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl
+/plbx12.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl
+/plr10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/
+plr8.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pl
+r9.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plss
+10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plss
+17.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plss
+bx10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pl
+ti10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pl
+ti9.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plt
+t10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plt
+t9.pfb>
+Output written on solving.pdf (41 pages, 1265466 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
+ 221 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
