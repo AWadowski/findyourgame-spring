@@ -14,7 +14,7 @@ Charakterystyczne cechy języka to między innymi:
 \item \textbf{Przenośność:} Dzięki maszynie wirtualnej Java (JVM), kod napisany w Javie jest przenośny i może być uruchamiany na różnych platformach bez konieczności modyfikacji.
 \item \textbf{Bezpieczeństwo:} Java oferuje różne mechanizmy bezpieczeństwa, takie jak zarządzanie pamięcią, które chronią przed wieloma popularnymi błędami programistycznymi.
 \item \textbf{Wielowątkowość:} Java obsługuje programowanie wielowątkowe, co pozwala na równoczesne wykonywanie wielu zadań.
-\item \textbf{Obiektowość:} Java jest językiem w pełni obiektowym, co ułatwia organizację i strukturyzację kodu.
+\item \textbf{Obiektowość:} Java jest językiem w pełni obiektowym, co ułatwia organizację i~strukturyzację kodu.
 \end{itemize}
 
 Język ten ma bardzo bogate zastosowanie:
@@ -30,7 +30,7 @@ Aby dobrze wykorzystać potencjał tego języka należy zwrócić uwagę na nast
 \begin{itemize}
 \item \textbf{Ucz się bibliotek:} Java ma ogromną bibliotekę standardową oraz wiele zewnętrznych bibliotek. Znajomość tych narzędzi może znacząco przyspieszyć proces tworzenia aplikacji.
 \item \textbf{Dbaj o jakość kodu:} Java jest językiem, który łatwo się komplikuje. Regularne przeglądy kodu, testy jednostkowe i stosowanie wzorców projektowych mogą pomóc w utrzymaniu kodu w dobrej kondycji.
-\item \textbf{Bądź na bieżąco:} Java jest ciągle rozwijana. Nowe wersje przynoszą nowe funkcje, które mogą ułatwić i przyspieszyć pracę\cite{javaSpecification}.
+\item \textbf{Bądź na bieżąco:} Java jest ciągle rozwijana. Nowe wersje przynoszą nowe funkcje, które mogą ułatwić i przyspieszyć pracę \cite{javaSpecification}.
 \end{itemize}
 
 \section{Spring Boot}
@@ -57,7 +57,7 @@ Spring Boot, będący kluczowym elementem ekosystemu Spring, to nowoczesny frame
     \item \textbf{Bezpieczeństwo:} Łatwa integracja z Spring Security umożliwia dodawanie funkcji bezpieczeństwa do aplikacji.
 \end{itemize}
 
-\item \textbf{Zastosowania:} Spring Boot jest niezwykle wszechstronny. Wykorzystywany jest do tworzenia aplikacji biznesowych, systemów e-commerce, aplikacji korporacyjnych oraz w rozwiązaniach opartych o mikroserwisy. Jego elastyczność i łatwość użycia sprawiają, że jest jednym z najpopularniejszych frameworków w świecie Javy\cite{springbootSpecs}.
+\item \textbf{Zastosowania:} Spring Boot jest niezwykle wszechstronny. Wykorzystywany jest do tworzenia aplikacji biznesowych, systemów e-commerce, aplikacji korporacyjnych oraz w~rozwiązaniach opartych o mikroserwisy. Jego elastyczność i łatwość użycia sprawiają, że jest jednym z najpopularniejszych frameworków w świecie Javy \cite{springbootSpecs}.
 \end{itemize}
 
 \section{Lombok}
@@ -67,7 +67,7 @@ Spring Boot, będący kluczowym elementem ekosystemu Spring, to nowoczesny frame
     \caption{Logo biblioteki Lombok (źródło: https://avatars.githubusercontent.com)}
     \label{fig:Lombok}
 \end{figure}
-Biblioteka Lombok to narzędzie dla języka Java, które znacząco upraszcza proces tworzenia kodu poprzez eliminację powtarzalnych fragmentów, takich jak gettery(metody pozwalające na pobranie zawartości prywatnego pola), settery (metody pozwalające na ustawienie prywatnego pola), konstruktory czy metody \textit{hashCode()} i \textit{equals()}. Te często powtarzające się fragmenty są nieodłącznym elementem tradycyjnych aplikacji Java, ale dzięki Lombokowi można je zastąpić kilkoma adnotacjami, co sprawia, że kod staje się bardziej zwięzły i czytelny.
+Biblioteka Lombok to narzędzie dla języka Java, które znacząco upraszcza proces tworzenia kodu poprzez eliminację powtarzalnych fragmentów, takich jak gettery (metody pozwalające na pobranie zawartości prywatnego pola), settery (metody pozwalające na ustawienie prywatnego pola), konstruktory czy metody \textit{hashCode()} i \textit{equals()}. Te często powtarzające się fragmenty są nieodłącznym elementem tradycyjnych aplikacji Java, ale dzięki Lombokowi można je zastąpić kilkoma adnotacjami, co sprawia, że kod staje się bardziej zwięzły i czytelny.
 
 Główne cechy i zalety Lomboka:
 
@@ -91,7 +91,7 @@ Przykłady użycia Lomboka:
 \item \textbf{@Data:} Jest to jedna z najbardziej wszechstronnych adnotacji w Lomboku. Generuje gettery, settery, hashCode(), equals() oraz toString() dla całej klasy.
 \item \textbf{@Slf4j:} Dodaje loggera do klasy, co jest przydatne w aplikacjach korzystających z logowania.
 \end{itemize} 
-Mimo wielu zalet, warto również pamiętać o pewnych ograniczeniach i potencjalnych problemach związanych z używaniem Lomboka, takich jak kompatybilność z niektórymi narzędziami czy trudności w debugowaniu automatycznie wygenerowanego kodu\cite{lombokSpecs}.
+Mimo wielu zalet, warto również pamiętać o pewnych ograniczeniach i potencjalnych problemach związanych z używaniem Lomboka, takich jak kompatybilność z niektórymi narzędziami czy trudności w debugowaniu automatycznie wygenerowanego kodu \cite{lombokSpecs}.
 
 \section{Liquibase}
 \begin{figure}[h]
@@ -124,7 +124,7 @@ Przykłady użycia Liquibase:
 
 \item \textbf{Rollback:} Jeśli wprowadzona zmiana powoduje problemy, Liquibase umożliwia łatwe cofnięcie tej zmiany.
 \end{itemize}
-Liquibase podobnie jak każde narzędzie ma pewne ograniczenia. Może wymagać pewnego nakładu pracy przy konfiguracji, a także pewnej krzywej uczenia się, zwłaszcza dla tych, którzy nie są zaznajomieni z kontrolą wersji dla baz danych. Jedną z wad przy budowie tej aplikacji był brak integracji z Firebase. Dla wielu zespołów deweloperskich korzyści płynące z użycia Liquibase, takie jak spójność, powtarzalność i kontrola nad zmianami w bazie danych, dają dużi\cite{liquibaseSpecs}.
+Liquibase podobnie jak każde narzędzie ma pewne ograniczenia. Może wymagać pewnego nakładu pracy przy konfiguracji, a także pewnej krzywej uczenia się, zwłaszcza dla tych, którzy nie są zaznajomieni z kontrolą wersji dla baz danych. Jedną z wad przy budowie tej aplikacji był brak integracji z Firebase. Dla wielu zespołów deweloperskich korzyści płynące z użycia Liquibase, takie jak spójność, powtarzalność i kontrola nad zmianami w bazie danych, prowadzą właśnie do wyboru tej biblioteki \cite{liquibaseSpecs}.
 
 \section{TypeScript}
 \begin{figure}[h]
@@ -133,7 +133,7 @@ Liquibase podobnie jak każde narzędzie ma pewne ograniczenia. Może wymagać p
     \caption{Logo języka TypeScript (źródło: https://blog.toothpickapp.com)}
     \label{fig:TypeScript}
 \end{figure}
-TypeScript to język programowania opracowany przez Microsoft, który rozszerza JavaScript o opcjonalne typowanie statyczne i inne funkcje. Jego głównym celem jest ułatwienie tworzenia dużych i złożonych aplikacji w JavaScript, zapewniając narzędzia i funkcje, które pomagają w identyfikacji błędów na wczesnym etapie procesu deweloperskiego.
+TypeScript to język programowania opracowany przez Microsoft, który rozszerza JavaScript o opcjonalne typowanie statyczne i inne funkcje. Jego głównym celem jest ułatwienie tworzenia dużych i złożonych aplikacji w JavaScript, zapewniając narzędzia i funkcje, które pomagają w~identyfikacji błędów na wczesnym etapie procesu deweloperskiego.
 
 Główne cechy i zalety TypeScript:
 \begin{itemize}
@@ -141,7 +141,7 @@ Główne cechy i zalety TypeScript:
 
 \item \textbf{Wsparcie dla najnowszych funkcji ECMAScript:} TypeScript obsługuje najnowsze funkcje i składnię ECMAScript, a także umożliwia kompilację kodu do starszych wersji JavaScript, co jest przydatne dla zachowania kompatybilności z różnymi środowiskami.
 
-\item \textbf{Interfejsy i klasy:} TypeScript wprowadza koncepcję interfejsów i klas, które pomagają w organizacji kodu i tworzeniu bardziej modularnych i skalowalnych aplikacji.
+\item \textbf{Interfejsy i klasy:} TypeScript wprowadza koncepcję interfejsów i klas, które pomagają w~organizacji kodu i tworzeniu bardziej modularnych i skalowalnych aplikacji.
 
 \item \textbf{Dekoratory i metadane:} TypeScript oferuje dekoratory, które pozwalają na dodawanie metadanych do klas, metod i właściwości, co jest przydatne w wielu scenariuszach, takich jak programowanie sterowane aspektami.
 
@@ -158,7 +158,7 @@ Przykłady użycia języka TypeScript to:
 \item \textbf{Aplikacje serwerowe:} Dzięki integracji z Node.js, TypeScript jest również używany do tworzenia aplikacji serwerowych.
 \end{itemize}
 
-Wprowadzenie TypeScript do istniejącego projektu JavaScript może wymagać pewnych modyfikacji w kodzie. Ponadto, choć opcjonalne typowanie jest jednym z głównych atutów TypeScript, może również wprowadzić pewną złożoność, zwłaszcza dla tych, którzy są nowi w świecie silnie typowanych języków. Dla wielu deweloperów korzyści płynące z użycia TypeScript, takie jak lepsza organizacja kodu, łatwiejsze debugowanie i większa produktywność przeważają nad potencjalnymi wadami\cite{typescriptSpecs}.
+Wprowadzenie TypeScript do istniejącego projektu JavaScript może wymagać pewnych modyfikacji w kodzie. Ponadto, choć opcjonalne typowanie jest jednym z głównych atutów TypeScript, może również wprowadzić pewną złożoność, zwłaszcza dla tych, którzy są nowi w~świecie silnie typowanych języków. Dla wielu deweloperów korzyści płynące z użycia TypeScript, takie jak lepsza organizacja kodu, łatwiejsze debugowanie i większa produktywność przeważają nad potencjalnymi wadami \cite{typescriptSpecs}.
 
 \section{Angular}
 \begin{figure}[h]
@@ -167,7 +167,7 @@ Wprowadzenie TypeScript do istniejącego projektu JavaScript może wymagać pewn
     \caption{Logo frameworku Angular (źródło: https://miro.medium.com)}
     \label{fig:Angular}
 \end{figure}
-Angular to popularny framework do tworzenia aplikacji internetowych opracowany i utrzymywany przez Google. Został zaprojektowany z myślą o tworzeniu dynamicznych, jednostronicowych aplikacji internetowych (SPA) i oferuje zestaw narzędzi do efektywnego zarządzania danymi, logiką biznesową i interfejsem użytkownika.
+Angular to popularny framework do tworzenia aplikacji internetowych opracowany i~utrzymywany przez Google. Został zaprojektowany z myślą o tworzeniu dynamicznych, jednostronicowych aplikacji internetowych (SPA) i oferuje zestaw narzędzi do efektywnego zarządzania danymi, logiką biznesową i interfejsem użytkownika.
 
 Główne cechy i zalety frameworku Angular to między innymi:
 \begin{itemize}
@@ -179,9 +179,9 @@ Główne cechy i zalety frameworku Angular to między innymi:
 
 \item \textbf{Zaawansowany routing:} Angular oferuje potężny system routingu, który pozwala na ładowanie komponentów w oparciu o stan URL, leniwe ładowanie modułów i zagnieżdżone widoki.
 
-\item \textbf{Wsparcie dla formularzy:} Angular dostarcza narzędzia do tworzenia reaktywnych i szablonowych formularzy, które ułatwiają walidację i obsługę danych wejściowych.
+\item \textbf{Wsparcie dla formularzy:} Angular dostarcza narzędzia do tworzenia reaktywnych i~szablonowych formularzy, które ułatwiają walidację i~obsługę danych wejściowych.
 
-\item \textbf{Wbudowane narzędzia do testowania:} Angular zawiera narzędzia do jednostkowego i integracyjnego testowania aplikacji, co ułatwia zapewnienie jakości kodu.
+\item \textbf{Wbudowane narzędzia do testowania:} Angular zawiera narzędzia do jednostkowego i~integracyjnego testowania aplikacji, co ułatwia zapewnienie jakości kodu.
 
 \item \textbf{Wsparcie dla programowania reaktywnego:} Dzięki integracji z biblioteką RxJS, Angular umożliwia tworzenie reaktywnych aplikacji opartych na strumieniach danych.
 \end{itemize}
@@ -195,7 +195,7 @@ Przykłady użycia Angulara to na przykład:
 \item \textbf{Aplikacje mobilne:} Za pomocą narzędzi takich jak Ionic, Angular może być również używany do tworzenia aplikacji mobilnych.
 \end{itemize}
 
-Krzywa uczenia się Angulara jest stosunkowo stroma, zwłaszcza dla tych, którzy są nowi w świecie frameworków front-endowych. Ponadto, choć Angular jest bardzo wszechstronny, może być \textit{zbyt ciężki} dla prostych projektów, gdzie lżejsze rozwiązania, takie jak React czy Vue, mogą być bardziej odpowiednie. Jednak dla wielu deweloperów korzyści płynące z użycia Angulara, takie jak jego wszechstronność, wsparcie społeczności i ciągłe aktualizacje decydują o wyborze tego frameworka\cite{angularSpecs}.
+Krzywa uczenia się Angulara jest stosunkowo stroma, zwłaszcza dla tych, którzy są nowi w~świecie frameworków front-endowych. Ponadto, choć Angular jest bardzo wszechstronny, może być \textit{zbyt ciężki} dla prostych projektów, gdzie lżejsze rozwiązania, takie jak React czy Vue, mogą być bardziej odpowiednie. Jednak dla wielu deweloperów korzyści płynące z użycia Angulara, takie jak jego wszechstronność, wsparcie społeczności i ciągłe aktualizacje decydują o wyborze tego frameworka \cite{angularSpecs}.
 
 \section{PrimeNG}
 \begin{figure}[h]
@@ -217,7 +217,7 @@ Główne cechy i zalety narzędzia PrimeNG to między innymi:
 
 \item \textbf{Wsparcie dla mobilności:} Komponenty PrimeNG są responsywne i dostosowują się do różnych rozmiarów ekranów, co czyni je odpowiednimi zarówno dla aplikacji desktopowych, jak i mobilnych.
 
-\item \textbf{Integracja z Angulara:} Jako że PrimeNG został zaprojektowany specjalnie dla Angulara, jego komponenty doskonale integrują się z tym frameworkiem, oferując spójne API i wydajność.
+\item \textbf{Integracja z Angularem:} Jako że PrimeNG został zaprojektowany specjalnie dla Angulara, jego komponenty doskonale integrują się z tym frameworkiem, oferując spójne API i~wydajność.
 
 \item \textbf{Wysoka wydajność:} Komponenty PrimeNG są zoptymalizowane pod względem wydajności, co zapewnia płynne działanie nawet w dużych i złożonych aplikacjach.
 
@@ -234,12 +234,12 @@ Przykłady użycia narzędzia PrimeNG w aplikacjach webowych to:
 \item \textbf{Platformy e-commerce:} Komponenty takie jak karuzele produktów, listy rozwijane czy kalendarze czynią PrimeNG atrakcyjnym wyborem dla platform e-commerce.
 \end{itemize}
 
-PrimeNG może wymagać pewnego nakładu pracy przy konfiguracji, a niektóre komponenty mogą nie być dostosowane do bardzo specyficznych potrzeb. Korzyści płynące z użycia PrimeNG, takie jak bogata kolekcja komponentów, wsparcie społeczności i ciągłe aktualizacje, przeważają przy wyborze odpowiedniego narzędzia\cite{primengSpecs}.
+PrimeNG może wymagać pewnego nakładu pracy przy konfiguracji, a niektóre komponenty mogą nie być dostosowane do bardzo specyficznych potrzeb. Korzyści płynące z użycia PrimeNG, takie jak bogata kolekcja komponentów, wsparcie społeczności i ciągłe aktualizacje, przeważają przy wyborze odpowiedniego narzędzia \cite{primengSpecs}.
 
 \section{Podsumowanie}
 
-Wybór odpowiednich technologii i narzędzi jest jednym z najważniejszych etapów w procesie tworzenia aplikacji. Decyzje te mają bezpośredni wpływ na wydajność, skalowalność i utrzymanie projektu w przyszłości. Omówione w tym rozdziale technologie, takie jak Java, Spring Boot, Lombok, Liquibase, TypeScript, Angular i PrimeNG, stanowią przykład zaawansowanych i sprawdzonych rozwiązań, które są szeroko stosowane w branży IT. Każde z nich przynosi unikalne korzyści, które mogą znacząco przyczynić się do sukcesu projektu.
+Wybór odpowiednich technologii i narzędzi jest jednym z najważniejszych etapów w procesie tworzenia aplikacji. Decyzje te mają bezpośredni wpływ na wydajność, skalowalność i~utrzymanie projektu w przyszłości. Omówione w tym rozdziale technologie, takie jak Java, Spring Boot, Lombok, Liquibase, TypeScript, Angular i PrimeNG, stanowią przykład zaawansowanych i~sprawdzonych rozwiązań, które są szeroko stosowane w branży IT. Każde z nich przynosi unikalne korzyści, które mogą znacząco przyczynić się do sukcesu projektu.
 
 Jednakże, niezależnie od zalet poszczególnych technologii, kluczem jest ich prawidłowe zastosowanie i integracja. Ważne jest, aby zrozumieć specyfikę projektu, jego wymagania oraz oczekiwania użytkowników. Tylko wtedy można dokonać świadomego wyboru, który przyniesie oczekiwane korzyści.
 
-Współczesny świat technologii oferuje nieskończone możliwości. Dlatego też, nieustanne kształcenie się, eksplorowanie nowych narzędzi i adaptacja do zmieniającego się środowiska są kluczem do tworzenia innowacyjnych i skutecznych rozwiązań. W końcu to nie tylko technologia, ale przede wszystkim ludzie i ich wizja, determinują sukces każdego projektu.
+Współczesny świat technologii oferuje nieskończone możliwości. Dlatego też, nieustanne kształcenie się, eksplorowanie nowych narzędzi i adaptacja do zmieniającego się środowiska są kluczem do tworzenia innowacyjnych i skutecznych rozwiązań. W końcu to nie tylko technologia, ale przede wszystkim ludzie i ich wizja determinują sukces każdego projektu.

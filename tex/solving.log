@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  9 SEP 2023 12:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.8.21)  12 SEP 2023 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -400,13 +400,37 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@defscounter=\count307
-\c@odeexample=\count308
+(C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen180
+\TX@old@table=\dimen181
+\TX@old@col=\dimen182
+\TX@target=\dimen183
+\TX@delta=\dimen184
+\TX@cols=\count307
+\TX@ftn=\toks40
+)
+(C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+
+(C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+(C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+) (C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks41
+\minrowclearance=\skip67
+\rownum=\count308
+)
+\c@defscounter=\count309
+\c@odeexample=\count310
 )
 (C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count309
+\l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box66
 ) (solving.aux)
 \openout1 = `solving.aux'.
@@ -462,22 +486,22 @@ LaTeX Font Info:    ... okay on input line 2.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count310
+\c@lstlisting=\count312
 
 (C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
-\scratchdimen=\dimen180
+\scratchcounter=\count313
+\scratchdimen=\dimen185
 \scratchbox=\box67
-\nofMPsegments=\count312
-\nofMParguments=\count313
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count314
-\MPscratchDim=\dimen181
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
-\everyMPtoPDFconversion=\toks41
+\nofMPsegments=\count314
+\nofMParguments=\count315
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count316
+\MPscratchDim=\dimen186
+\MPnumerator=\count317
+\makeMPintoPDFobject=\count318
+\everyMPtoPDFconversion=\toks43
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -539,13 +563,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
  []
 
 
-Underfull \hbox (badness 7486) in paragraph at lines 44--45
-\OT4/cmss/bx/n/14.4 baz da-nych: Fi-re-base i Oracle da-ta-base, na
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
-\OT4/cmss/bx/n/14.4 przy-kªa-dzie apli-ka-cji wy-szu-ku-j¡-cej gry we-dªug
+\OT4/cmss/bx/n/14.4 apli-ka-cji wy-szu-ku-j¡-cej gry we-dªug za-da-nych
  []
 
 
@@ -564,7 +583,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--54
  []
 
 
-Overfull \hbox (6.73637pt too wide) in paragraph at lines 27--57
+Overfull \hbox (6.73636pt too wide) in paragraph at lines 27--57
 []  [] 
  []
 
@@ -580,7 +599,25 @@ pg>]) [2] (solving.toc)
 
  [3
 
-] [4] (wstep.tex) (rozdzial_1.tex [1
+] [4] (wstep.tex
+Underfull \hbox (badness 2285) in paragraph at lines 5--6
+[]\OT4/cmr/m/n/10 Wielu pro-gra-mi-stów na po-cz¡tku bu-dowy pro-jektu zde-rza 
+si¦ z pro-ble-mem wy-boru
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 13--14
+[]\OT4/cmr/m/n/10 W pierw-szym roz-dziale zo-sta-nie przed-sta-wiony pro-ces tw
+o-rze-nia apli-ka-cji we-bo-wej. Na
+ []
+
+) (rozdzial_1.tex
+Underfull \hbox (badness 1888) in paragraph at lines 19--1
+\OT4/cmr/m/n/10 i nie-re-la-cyj-nych. Mam na-dziej¦, »e ta praca b¦-dzie u»y-te
+cz-nym ¹ró-dªem in-for-ma-cji dla
+ []
+
+[1
 
 
 ] [2
@@ -588,9 +625,9 @@ pg>]) [2] (solving.toc)
 ]
 Rozdzia\l  1.
 [3]
-Underfull \hbox (badness 2478) in paragraph at lines 26--27
+Underfull \hbox (badness 4846) in paragraph at lines 26--27
 \OT4/cmr/m/n/10 wi-zu-alne re-pre-zen-ta-cje apli-ka-cji, które po-ma-gaj¡ zro-
-zu-mie¢, jak b¦-dzie ona wy-gl¡-da¢ i
+zu-mie¢, jak b¦-dzie ona wy-gl¡-da¢
  []
 
 
@@ -599,22 +636,28 @@ Underfull \hbox (badness 1910) in paragraph at lines 34--35
 a-nia. Jego gªów-nym ce-lem jest
  []
 
-[4] [5]
-Underfull \hbox (badness 1728) in paragraph at lines 93--94
-\OT4/cmr/m/n/10 For-gery (CSRF). Wy-maga to sta-ªego mo-ni-to-ro-wa-nia, ak-tu-
-ali-za-cji opro-gra-mo-wa-nia i
+
+Underfull \hbox (badness 1097) in paragraph at lines 38--39
+[]\OT4/cmr/m/n/10 Przedostatni etap po-lega na wdro-»e-niu apli-ka-cji u klient
+a. W tym cza-sie pro-gra-mi-±ci
  []
 
+[4]
+Underfull \hbox (badness 1515) in paragraph at lines 44--45
+\OT4/cmr/m/n/10 nie-za-le»-nie od u»y-wa-nych na-rz¦-dzi, klu-czem do suk-cesu 
+jest zro-zu-mie-nie po-trzeb klienta
+ []
 
+[5]
 Underfull \hbox (badness 1163) in paragraph at lines 105--106
 \OT4/cmr/m/n/10 ze-wn¦trz-nymi na-rz¦-dziami, plat-for-mami i ser-wi-sami, aby 
 roz-sze-rzy¢ swoje funk-cjo-nal-no-±ci,
  []
 
 [6]
-Underfull \hbox (badness 1496) in paragraph at lines 115--116
-[]\OT4/cmr/bx/n/10 Media spo-ªecz-no-±ciowe \OT4/cmr/m/n/10 - po-ª¡-cze-nie z F
-a-ce-bo-okiem, Twit-te-rem czy In-sta-gra-mem
+Underfull \hbox (badness 1286) in paragraph at lines 115--116
+[]\OT4/cmr/bx/n/10 Media spo-ªecz-no-±ciowe \OT4/cmr/m/n/10 -- po-ª¡-cze-nie z 
+Fa-ce-bo-okiem, Twit-te-rem czy In-sta-gra-mem
  []
 
 
@@ -630,9 +673,9 @@ mi po-zwala na wzbo-ga-ce-nie
  []
 
 
-Underfull \hbox (badness 1360) in paragraph at lines 128--129
+Underfull \hbox (badness 3439) in paragraph at lines 128--129
 \OT4/cmr/m/n/10 funk-cjo-nal-no-±ci apli-ka-cji we-bo-wej i do-star-cze-nie u»y
-t-kow-ni-kom bar-dziej za-awan-so-wa-nych i
+t-kow-ni-kom bar-dziej za-awan-so-wa-nych
  []
 
 [7]) (rozdzial_2.tex [8]
@@ -643,9 +686,9 @@ File: ./img/javalogo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./img/javalogo.jpg  used on input line 6.
 (pdftex.def)             Requested size: 298.75264pt x 183.56497pt.
 
-Underfull \hbox (badness 2951) in paragraph at lines 17--18
+Underfull \hbox (badness 5667) in paragraph at lines 17--18
 []\OT4/cmr/bx/n/10 Obiektowo±¢: \OT4/cmr/m/n/10 Java jest j¦-zy-kiem w peªni ob
-iek-to-wym, co uªa-twia or-ga-ni-za-cj¦ i
+iek-to-wym, co uªa-twia or-ga-ni-za-cj¦
  []
 
 [9
@@ -666,6 +709,12 @@ au-to-ma-tycz-nie kon-fi-gu-ruje apli-ka-cj¦ na
 Underfull \hbox (badness 1603) in paragraph at lines 60--61
 []\OT4/cmr/bx/n/10 Zastosowania: \OT4/cmr/m/n/10 Spring Boot jest nie-zwy-kle w
 szech-stronny. Wy-ko-rzy-sty-wany jest do
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 60--61
+\OT4/cmr/m/n/10 two-rze-nia apli-ka-cji biz-ne-so-wych, sys-te-mów e-commerce, 
+apli-ka-cji kor-po-ra-cyj-nych oraz
  []
 
 <./img/lombok.png, id=59, 281.05pt x 281.05pt>
@@ -715,15 +764,15 @@ File: ./img/angular.png Graphic file (type png)
 Package pdftex.def Info: ./img/angular.png  used on input line 166.
 (pdftex.def)             Requested size: 256.07741pt x 128.04001pt.
 
-Underfull \hbox (badness 2538) in paragraph at lines 170--171
+Underfull \hbox (badness 5331) in paragraph at lines 170--171
 []\OT4/cmr/m/n/10 Angular to po-pu-larny fra-me-work do two-rze-nia apli-ka-cji
- in-ter-ne-to-wych opra-co-wany i
+ in-ter-ne-to-wych opra-co-wany
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 170--171
-\OT4/cmr/m/n/10 utrzy-my-wany przez Go-ogle. Zo-staª za-pro-jek-to-wany z my-±l
-¡ o two-rze-niu dy-na-micz-nych,
+Underfull \hbox (badness 1275) in paragraph at lines 170--171
+\OT4/cmr/m/n/10 i utrzy-my-wany przez Go-ogle. Zo-staª za-pro-jek-to-wany z my-
+±l¡ o two-rze-niu dy-na-micz-nych,
  []
 
 [14 <./img/angular.png>]
@@ -732,6 +781,12 @@ File: ./img/primeng.png Graphic file (type png)
 <use ./img/primeng.png>
 Package pdftex.def Info: ./img/primeng.png  used on input line 203.
 (pdftex.def)             Requested size: 213.39568pt x 98.18193pt.
+
+Underfull \hbox (badness 1237) in paragraph at lines 220--221
+\OT4/cmr/m/n/10 jego kom-po-nenty do-sko-nale in-te-gruj¡ si¦ z tym fra-me-wor-
+kiem, ofe-ru-j¡c spójne API
+ []
+
 
 Underfull \hbox (badness 4940) in paragraph at lines 222--223
 []\OT4/cmr/bx/n/10 Wysoka wy-daj-no±¢: \OT4/cmr/m/n/10 Kom-po-nenty Pri-meNG s¡
@@ -745,6 +800,12 @@ ym wy-bo-rem do two-rze-nia
  []
 
 
+Underfull \hbox (badness 1715) in paragraph at lines 241--242
+[]\OT4/cmr/m/n/10 Wybór od-po-wied-nich tech-no-lo-gii i na-rz¦-dzi jest jed-ny
+m z naj-wa»-niej-szych eta-pów w
+ []
+
+
 Underfull \hbox (badness 1102) in paragraph at lines 243--244
 []\OT4/cmr/m/n/10 Jednak»e, nie-za-le»-nie od za-let po-szcze-gól-nych tech-no-
 lo-gii, klu-czem jest ich pra-wi-dªowe
@@ -752,6 +813,18 @@ lo-gii, klu-czem jest ich pra-wi-dªowe
 
 ) (rozdzial_3.tex [16]
 Rozdzia\l  3.
+
+Underfull \hbox (badness 2269) in paragraph at lines 3--4
+[]\OT4/cmr/m/n/10 Zbieranie da-nych ba-daw-czych jest klu-czo-wym ele-men-tem w
+ielu pro-jek-tów na-uko-wych
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 3--4
+\OT4/cmr/m/n/10 efek-tywne i sys-te-ma-tyczne gro-ma-dze-nie in-for-ma-cji. W t
+ym roz-dziale zo-sta-nie opi-sane jak
+ []
+
 (C:\Users\adamw\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
@@ -769,90 +842,97 @@ LaTeX Font Warning: Font shape `OT4/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT4/cmtt/m/n' tried instead on input line 9.
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 29--30
-\OT4/cmr/m/n/10 Po uwzgl¦d-nie-niu za-le»-no-±ci usta-wi-ªem kon-fi-gu-ra-cj¦ w
- \OT4/cmr/m/it/10 ap-pli-ca-tion.properties \OT4/cmr/m/n/10 dla mo-jego
+Underfull \hbox (badness 1342) in paragraph at lines 21--22
+[]\OT4/cmr/m/n/10 Nast¦pnie za-j¦to si¦ utwo-rze-niem po-ª¡-cze-nie do bazy da-
+nych Oracle po-przez do-da-nie
  []
+
+
+LaTeX Warning: Reference `Kondifuracja application.properties' on page 17 undef
+ined on input line 29.
 
 [17
 
 ] [18]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-Underfull \hbox (badness 3302) in paragraph at lines 134--135
+Underfull \hbox (badness 3302) in paragraph at lines 112--113
 []\OT4/cmr/m/it/10 firebaseApp() \OT4/cmr/m/n/10 -- me-toda ini-cja-li-zu-j¡ca 
 po-ª¡-cze-nie z baz¡ Fi-re-base, wy-wo-ªuje klas¦
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 134--135
+Underfull \hbox (badness 1484) in paragraph at lines 112--113
 \OT4/cmr/m/it/10 Fi-re-ba-se-Op-tions\OT4/cmr/m/n/10 , która po usta-wie-niu od
 -po-wied-nich ,,cre-den-tials'' oraz ,,da-ta-ba-seUrl''
  []
 
-[20]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[19] [20]
+Underfull \vbox (badness 1184) has occurred while \output is active []
 
  [21]
 [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
-[24]
-Underfull \hbox (badness 2050) in paragraph at lines 355--356
+Underfull \hbox (badness 2050) in paragraph at lines 333--334
 \OT4/cmr/m/n/10 z naj-po-pu-lar-niej-szych na-rz¦-dzi do two-rze-nia dy-na-micz
 -nych i za-awan-so-wa-nych in-ter-fej-sów
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 357--358
+Underfull \hbox (badness 1603) in paragraph at lines 335--336
 []\OT4/cmr/m/n/10 Do sty-lo-wa-nia i bu-dowy in-ter-fejsu u»yt-kow-nika wy-ko-r
 zy-stano bi-blio-tek¦ kom-po-nen-tów
  []
 
-<./img/stronaglowna.jpg, id=115, 1385.175pt x 705.38531pt>
+<./img/stronaglowna.jpg, id=112, 1385.175pt x 705.38531pt>
 File: ./img/stronaglowna.jpg Graphic file (type jpg)
 <use ./img/stronaglowna.jpg>
-Package pdftex.def Info: ./img/stronaglowna.jpg  used on input line 363.
+Package pdftex.def Info: ./img/stronaglowna.jpg  used on input line 341.
 (pdftex.def)             Requested size: 426.79135pt x 217.33253pt.
-[25 <./img/stronaglowna.jpg>]
-<./img/secondpage.jpg, id=119, 1168.365pt x 668.4975pt>
-File: ./img/secondpage.jpg Graphic file (type jpg)
-<use ./img/secondpage.jpg>
-Package pdftex.def Info: ./img/secondpage.jpg  used on input line 411.
-(pdftex.def)             Requested size: 426.79135pt x 244.19847pt.
-) (rozdzial_4.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26] [27 <./img/secondpage.jpg>] [28
+[24]
 
-]
+LaTeX Warning: Reference `Metoda wywoÅ‚ywana pod wciÅ›niÄ™ciu przycisku' on pag
+e 25 undefined on input line 365.
+
+[25 <./img/stronaglowna.jpg>]
+<./img/secondpage.jpg, id=119, 1230.84843pt x 675.27281pt>
+File: ./img/secondpage.jpg Graphic file (type jpg)
+<use ./img/secondpage.jpg>
+Package pdftex.def Info: ./img/secondpage.jpg  used on input line 389.
+(pdftex.def)             Requested size: 426.79135pt x 234.144pt.
+) (rozdzial_4.tex [26 <./img/secondpage.jpg>]
 Rozdzia\l  4.
 
-Underfull \hbox (badness 3058) in paragraph at lines 3--4
-[]\OT4/cmr/m/n/10 W po-przed-nich roz-dzia-ªach sku-pi-li-±my si¦ na po-rów-na-
-niu czy-sto teo-re-tycz-nym oraz
+Underfull \hbox (badness 1028) in paragraph at lines 3--4
+\OT4/cmr/m/n/10 W tym roz-dziale przed-sta-wione zo-stan¡ rze-czy-wi-ste ró»-ni
+ce po za-im-ple-men-to-wa-niu dwóch
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 3--4
+Underfull \hbox (badness 1178) in paragraph at lines 3--4
 \OT4/cmr/m/n/10 opó¹-nie-nia po-ª¡-cze-nia w obu przy-pad-kach s¡ po-rów-ny-wal
-ne, wi¦c skupmy si¦ na cza-sie
+ne, wi¦c sku-piono si¦ na cza-sie
  []
 
-<./img/wykres.jpg, id=130, 659.46375pt x 496.85625pt>
+<./img/wykres.jpg, id=123, 660.96938pt x 491.58656pt>
 File: ./img/wykres.jpg Graphic file (type jpg)
 <use ./img/wykres.jpg>
-Package pdftex.def Info: ./img/wykres.jpg  used on input line 9.
-(pdftex.def)             Requested size: 341.43437pt x 257.25226pt.
+Package pdftex.def Info: ./img/wykres.jpg  used on input line 70.
+(pdftex.def)             Requested size: 341.43437pt x 253.94626pt.
+[27
 
-Underfull \vbox (badness 4168) has occurred while \output is active []
+ <./img/wykres.jpg>]
+Underfull \hbox (badness 2538) in paragraph at lines 80--81
+[]\OT4/cmr/m/n/10 Chocia» wy-niki wy-kresu su-ge-ruj¡, »e Fi-re-base jest zna-c
+z¡co szyb-szy pod wzgl¦-dem
+ []
 
- [29 <./img/wykres.jpg>]) (podsumowanie.tex [30]) (bibliografia.tex [31
+) (podsumowanie.tex [28] [29] [30
 
-] [32
+]) (bibliografia.tex [31] [32
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
@@ -881,39 +961,49 @@ mr/m/n/9 , $\OT4/cmtt/m/n/9 https : / / www . adservio . fr / post /
 
  [35] [36
 
-] (solving.lof)
-\tf@lof=\write7
-\openout7 = `solving.lof'.
+] (solving.lol)
+\tf@lol=\write7
+\openout7 = `solving.lol'.
 
- [37] (solving.aux) ) 
+ [37] [38
+
+] (solving.lof)
+\tf@lof=\write8
+\openout8 = `solving.lof'.
+
+
+[39] (solving.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 10779 strings out of 476339
- 173541 string characters out of 5788119
- 2176340 words of memory out of 5000000
- 30972 multiletter control sequences out of 15000+600000
+ 10994 strings out of 476339
+ 177773 string characters out of 5788119
+ 2201340 words of memory out of 5000000
+ 31170 multiletter control sequences out of 15000+600000
  528015 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,10n,82p,1940b,1736s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dv
-ips/pl/pltt.enc}{C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/p
-l/plit.enc}{C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plr
-m.enc} <C:\Users\adamw\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
-tcrm1000.pk><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl
-/plbx10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl
-/plbx12.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl
-/plr10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/
-plr8.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pl
-r9.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plss
-10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plss
-17.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plss
-bx10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pl
-ti10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pl
-ti9.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plt
-t10.pfb><C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plt
-t9.pfb>
-Output written on solving.pdf (41 pages, 1265466 bytes).
+ 74i,11n,82p,1943b,1739s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/pltt.enc}{C:
+/Users/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plit.enc}{C:/User
+s/adamw/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc} <C:\Users\ad
+amw\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Use
+rs/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx10.pfb><C:/Use
+rs/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Use
+rs/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/User
+s/adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr8.pfb><C:/Users/
+adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr9.pfb><C:/Users/ad
+amw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plss10.pfb><C:/Users/ad
+amw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plss17.pfb><C:/Users/ad
+amw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plssbx10.pfb><C:/Users/
+adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti10.pfb><C:/Users/
+adamw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plti9.pfb><C:/Users/a
+damw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt10.pfb><C:/Users/a
+damw/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/pltt9.pfb>
+Output written on solving.pdf (43 pages, 1302377 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
+ 228 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

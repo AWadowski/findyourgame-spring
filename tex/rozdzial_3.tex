@@ -1,12 +1,12 @@
 \chapter{Budowa aplikacji do zbierania danych badawczych}
 
-Zbieranie danych badawczych jest kluczowym elementem wielu projektów naukowych i biznesowych. Aby ułatwić ten proces, postanowiłem stworzyć aplikację, która pozwoli na efektywne i systematyczne gromadzenie informacji. W tym rozdziale opiszę, jak zbudowałem tę aplikację, składającą się z dwóch głównych komponentów: backendu i frontendu.
+Zbieranie danych badawczych jest kluczowym elementem wielu projektów naukowych i~biznesowych. Aby ułatwić ten proces, postanowiłem stworzyć aplikację, która pozwoli na efektywne i systematyczne gromadzenie informacji. W tym rozdziale zostanie opisane jak zbudowano aplikację, składającą się z dwóch głównych komponentów: backendu i frontendu.
 
 \section{Backend}
 
 Backend aplikacji został zbudowany z użyciem języka Java oraz frameworka Spring Boot, który był niezbędny do utworzenia aplikacji webowej i wspomagał routing.
-Do utworzonego projektu najpierw zaimportowałem bibliotekę Lombok oraz narzędzie Liquibase do sprawnego korzystania z baz danych, poprzez zależności:
-\begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Zależnosci dla Lomboka i Liquibase}, label={Zależnosci dla Lomboka i Liquibas}]
+Do utworzonego projektu najpierw zaimportowano bibliotekę Lombok oraz narzędzie Liquibase do sprawnego korzystania z~baz danych, poprzez zależności takie jak na Listingu \ref{Zależności dla Lomboka i Liquibase}.
+\begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Zależności dla Lomboka i Liquibase}, label={Zależności dla Lomboka i Liquibase}]
 <dependency>
     <groupId>org.projectlombok</groupId>
     <artifactId>lombok</artifactId>
@@ -18,15 +18,15 @@ Do utworzonego projektu najpierw zaimportowałem bibliotekę Lombok oraz narzęd
 </dependency>      
 \end{lstlisting}
 
-Następnie zająłem się utworzeniem połączenie do bazy danych Oracle poprzez dodanie odpowiedniej zależności dla Mavena:
-\begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Zależnosci dla Oracle database}, label={Zależnosci dla Oracle database}]
+Następnie zajęto się utworzeniem połączenie do bazy danych Oracle poprzez dodanie odpowiedniej zależności dla Mavena widocznej na Listingu \ref{Zależności dla Oracle database}.
+\begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Zależności dla Oracle database}, label={Zależności dla Oracle database}]
 <dependency>
    <groupId>com.oracle.database.jdbc</groupId>
    <artifactId>ojdbc8</artifactId>
    <version>21.9.0.0</version>
 </dependency>
 \end{lstlisting}
-Po uwzględnieniu zależności ustawiłem konfigurację w \textit{application.properties} dla mojego podłączenia do bazy danych, która powinna wyglądać następująco:
+Po uwzględnieniu zależności ustawiono konfigurację w \textit{application.properties} dla indywidualnego podłączenia do bazy danych, która powinna wyglądać tak jak na Listingu \ref{Kondifuracja application.properties}
 
 \begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Konfiguracja application.properties}, label={Konfiguracja application.properties}]
 spring.liquibase.change-log=classpath:/db/changelog/db.changelog-master.xml
@@ -41,9 +41,9 @@ spring.jpa.hibernate.ddl-auto=update
 firebase.config.path=key.json
 \end{lstlisting}
 
-W ten sposób uzyskałem pełne podłączenie do jednej z dwóch baz danych potrzebnych do testów wydajności. Kolejnym krokiem było podłączenie bazy Firebase od Google, czyli dodanie kolejnej zależności:
+W ten sposób uzyskano pełne podłączenie do jednej z dwóch baz danych potrzebnych do testów wydajności. Kolejnym krokiem było podłączenie bazy Firebase od Google, czyli dodanie kolejnej zależności:
 
-\begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Zależnosci dla Firebase}, label={Zależnosci dla Firebase}]
+\begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Zależności dla Firebase}, label={Zależności dla Firebase}]
 <dependency>
    <groupId>com.google.firebase</groupId>
    <artifactId>firebase-admin</artifactId>
@@ -52,31 +52,9 @@ W ten sposób uzyskałem pełne podłączenie do jednej z dwóch baz danych potr
 \end{lstlisting}
 
 Po dodaniu zależności należało utworzyć klasę konfiguracyjną w kodzie, która będzie pozwalała na ustanowienie połączenia z Firebase oraz pobieranie i wysyłanie danych na serwer.
-Tą klasą jest \textit{FirebaseConfig} z odpowiednią adnotacją \textit{@Configration} powodującą zainicjalizowanie tej klasy przy uruchomieniu aplikacji.
-Klasa ta wygląda następująco:
+Tą klasą jest \textit{FirebaseConfig} z odpowiednią adnotacją \textit{@Configuration} powodującą zainicjalizowanie tej klasy przy uruchomieniu aplikacji.
+Klasa ta została przedstawiona na Listingu \ref{Klasa do konfiguracji połączenia z Firebase}.
 \begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Klasa do konfiguracji połączenia z Firebase}, label={Klasa do konfiguracji połączenia z Firebase}]
-package org.example.service;
-
-import com.google.api.core.ApiFuture;
-import com.google.auth.oauth2.GoogleCredentials;
-import com.google.cloud.firestore.CollectionReference;
-import com.google.cloud.firestore.DocumentReference;
-import com.google.cloud.firestore.Firestore;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.FirebaseOptions;
-
-import com.google.firebase.cloud.FirestoreClient;
-import com.google.firebase.database.*;
-import org.example.FireBaseApi;
-import org.example.GameApi;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 @Configuration
 public class FirebaseConfig {
@@ -131,14 +109,14 @@ public class FirebaseConfig {
 }
 \end{lstlisting}
 \begin{itemize}
-\item \textit{firebaseApp()} -- metoda inicjalizująca połączenie z bazą Firebase, wywołuje klasę \textit{FirebaseOptions}, która po ustawieniu odpowiednich ,,credentials'' oraz ,,databaseUrl'' odnoszącego się do adresu mojej bazy tworzy połączenie i zwraca instację tego połączenia.
+\item \textit{firebaseApp()} -- metoda inicjalizująca połączenie z bazą Firebase, wywołuje klasę \textit{FirebaseOptions}, która po ustawieniu odpowiednich ,,credentials'' oraz ,,databaseUrl'' odnoszącego się do adresu mojej bazy tworzy połączenie i zwraca instancję tego połączenia.
 
 \item \textit{getFromFireBase()} -- metoda pozwalająca na pobranie obiektów z bazy danych, wołana później w momencie uzyskiwania rekordów dla użytkownika, co będzie omawiane w dalszej części rozdziału
 
 \item \textit{addToFireBase()} -- metoda pozwalająca na dodawanie rekordów do bazy danych, klasa \textit{CollectionRefference} pozwalała na określenie katalogu dla konkretnych rekordów 
 \end{itemize}
 
-Na tym etapie, w aplikacji jest już połączenie do bazy obu baz danych oraz zaimportowane potrzebne zależności. Skupiłem się więc na tworzeniu modelu API gry, która będzie przechowywana na bazie oraz zwracana do wyświetlenia u użytkownika. Model ten wygląda następująco:
+Na tym etapie, w aplikacji jest już połączenie do bazy obu baz danych oraz zaimportowane potrzebne zależności. Skupiono  się więc na tworzeniu modelu API gry, która będzie przechowywana na bazie oraz zwracana do wyświetlenia u użytkownika. Model ten został przedstawiony na Listingu \ref{Klasa API dla gry}.
 \begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Klasa API dla gry}, label={Klasa API dla gry}]
 public class GameApi {
     private Long id;
@@ -156,9 +134,9 @@ public class GameApi {
 }
 \end{lstlisting}
 
-Aby poprawnie dodać obiekt do Firebase, daty powinny być zapisywane w formacie \textit{String}, przez co utworzyłem dedykowany model API dla Firebase, który posiadał zmieniony format dat.
+Aby poprawnie dodać obiekt do Firebase, daty powinny być zapisywane w formacie \textit{String}, przez co utworzono dedykowany model API dla Firebase, który posiadał zmieniony format dat.
 
-Po ustaleniu odpowiedniego API skupiłem się na utworzeniu tabeli w bazie Oracle przy użyciu liquibase. Liquibase jest zapisany w formacie \textit{XML} i wygląda następująco:
+Po ustaleniu odpowiedniego API skupiono się na utworzeniu tabeli w bazie Oracle przy użyciu liquibase. Liquibase jest zapisany w formacie \textit{XML} i wygląda tak jak na Listingu przedstawionym poniżej.
 \begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Tworzenie tabeli przy użyciu Liquibase}, label={Tworzenie tabeli przy użyciu Liquibase}]
 <?xml version="1.0" encoding="UTF-8"?>
 <databaseChangeLog
@@ -241,12 +219,12 @@ Po ustaleniu odpowiedniego API skupiłem się na utworzeniu tabeli w bazie Oracl
 </databaseChangeLog>
 \end{lstlisting}
 
-Został jeszcze problem przechowywania wyników dla czasów wyszukiwania poszczególnych baz danych, dlatego utworzyłem również tabelę \textit{SEARCHING}, która zawierała pola takie jak:
+Został jeszcze problem przechowywania wyników dla czasów wyszukiwania poszczególnych baz danych, dlatego utworzono również tabelę \textit{SEARCHING}, która zawierała pola takie jak:
 \begin{itemize}
 \item \textit{searching type} -- typ wyszukiwania, rozróżnienie na wyszukiwanie w bazie Oracle lub Firebase
 \item \textit{searching mode} -- czas wyszukiwania podawany w milisekundach
 \end{itemize}
-Po skonfigurowaniu bazy danych Oracle, utworzyłem ,,controllery'' wystawiające usługi od odczytu przez aplikację frontendową. Jeden controller przyjmuje obiekt GameApi w którym sprecyzowane są wartości do wyszukiwania gier i zwraca listę gier, które spełniają określone kryteria podane przez użytkownika. Wygląda on następująco:
+Po skonfigurowaniu bazy danych Oracle, utworzono ,,controllery'' wystawiające usługi od odczytu przez aplikację frontendową. Jeden controller przyjmuje obiekt GameApi w którym sprecyzowane są wartości do wyszukiwania gier i zwraca listę gier, które spełniają określone kryteria podane przez użytkownika. Controller ten został przedstawiony na Listingu \ref{Kontroler do znajdowania gier}.
 \begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Kontroler do znajdowania gier}, label={Kontroler do znajdowania gier}]
 @PostMapping("/findByCriteria")
     public List<GameApi> findByCriteria(@RequestBody GameApi gameApi) {
@@ -254,7 +232,7 @@ Po skonfigurowaniu bazy danych Oracle, utworzyłem ,,controllery'' wystawiające
     }
 \end{lstlisting}
 
-Jak widać obsługa tego controllera zapisana jest w gameService i wygląda następująco:
+Jak widać obsługa tego controllera zapisana jest w gameService. Szczegółowy kod z klasy gameService jest widoczny na Listingu \ref{Proces wyszukiwania gry według kryteriów}.
 \begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Proces wyszukiwania gry według kryteriów}, label={Proces wyszukiwania gry według kryteriów}]
  public List<GameApi> findByCriteria(GameApi criteria) {
         List<GameApi> results = findByCriteriaInternal(criteria);
@@ -332,16 +310,16 @@ Jak widać obsługa tego controllera zapisana jest w gameService i wygląda nast
     }
 \end{lstlisting}
 
-Obiekty są wyszukiwane na podstawie podanych kryteriów przez użytkownika w dwóch bazach, jednak zwracana lista jest zwracana tylko z bazy Oracle. Obie metody działają identycznie mierząc czas dla takiej samej operacji, a później zapisując czas do tabeli \textit{SEARCHING} przez co możemy łatwo odczytać wynik jednym zapytaniem.
+Obiekty są wyszukiwane na podstawie podanych kryteriów przez użytkownika w dwóch bazach, jednak zwracana lista jest zwracana tylko z bazy Oracle. Obie metody działają identycznie mierząc czas dla takiej samej operacji, a później zapisując czas do tabeli \textit{SEARCHING} przez co można łatwo odczytać wynik jednym zapytaniem.
 
-Drugą usługą wystawioną w \textit{Controllerze} jest usługa do zmiany rankingu danej pozycji, użytkownik po wyszukiwaniu gier, będzie miał możliwość oceny czy gra spełnia jego oczekiwania czy nie, co będzie wpływało na ranking konkretnej gry i skutkowało jej wyświetlaniem w późniejszym etapie. Usługa ta wygląda następująco:
+Drugą usługą wystawioną w \textit{Controllerze} jest usługa do zmiany rankingu danej pozycji, użytkownik po wyszukiwaniu gier, będzie miał możliwość oceny czy gra spełnia jego oczekiwania czy nie, co będzie wpływało na ranking konkretnej gry i skutkowało jej wyświetlaniem w późniejszym etapie. Usługa ta jest widoczna na Listingu \ref{Kontroler do zmiany rankingu}.
 \begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Kontroler do zmiany rankingu}, label={Kontroler do zmiany rankingu}]
     @PutMapping("/changeRanking/{id}/{ranking}")
     public void changeRanking(@PathVariable Long id, @PathVariable Long ranking){
         gameService.changeRanking(id,ranking);
     }
 \end{lstlisting}
-A w serwisie usługa prezentuje się w następujący sposób:
+W serwisie usługa prezentuje się w sposób przedstawiony na Listingu \ref{Obsługa zmiany rankingu}.
 \begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Obsługa zmiany rankingu}, label={Obsługa zmiany rankingu}]
     public void changeRanking(Long id, Long ranking){
         GameEntity gameEntity = gameRepository.findById(id).orElseThrow(() -> new RuntimeException("Nie znaleziono gry o podanym id"));
@@ -349,14 +327,14 @@ A w serwisie usługa prezentuje się w następujący sposób:
         gameRepository.save(gameEntity);
     }
 \end{lstlisting}
-W ten sposób uzyskałem poprawnie działający backend, który zawiera podłączenie do obu baz danych oraz zapisuje informacje odnośnie czasu wyszukiwania między nimi.
+W ten sposób uzyskano poprawnie działający backend, który zawiera podłączenie do obu baz danych oraz zapisuje informacje odnośnie czasu wyszukiwania między nimi.
 
 \section{Frontend}
 Frontend aplikacji został zbudowany przy użyciu frameworka Angular, który jest jednym z najpopularniejszych narzędzi do tworzenia dynamicznych i zaawansowanych interfejsów użytkownika. Umożliwia on jednostronicowe renderowanie aplikacji oraz oferuje szereg funkcji, takich jak dwukierunkowe wiązanie danych, iniekcja zależności czy modularyzacja.
 
-Do stylowania i budowy interfejsu użytkownika wykorzystano bibliotekę komponentów PrimeNG. Jest to zestaw bogatych komponentów UI dla Angulara, który znacznie ułatwia i przyspiesza proces rozwijania aplikacji.
+Do stylowania i budowy interfejsu użytkownika wykorzystano bibliotekę komponentów PrimeNG. Jest to zestaw bogatych komponentów UI dla Angulara, który znacznie ułatwia i~przyspiesza proces rozwijania aplikacji.
 
-Strona główna napisanej przeze mnie aplikacji prezentuje się następująco:
+Strona główna utworzonej do celów badawczych aplikacji prezentuje się następująco:
 
 \begin{figure}[h]
     \centering
@@ -365,11 +343,11 @@ Strona główna napisanej przeze mnie aplikacji prezentuje się następująco:
     \label{fig:StronaGlowna}
 \end{figure}
 
-Na stronie poza polami do wyszukiwania, widzimy również polecane gry przez innych użytkowników. 
+Na stronie poza polami do wyszukiwania, widnieją również polecane gry przez innych użytkowników. 
 Użytkownik może wprowadzić 8 parametrów do wyszukiwania gry takich jak:
 \begin{itemize}
 \item \textbf{Typ gry:} np. RPG, FPS, Adventure, Strategy, MOBA, Sports, Racing
-\item \textbf{Czy multiplayer:} pole powinno przyjmować wartości Tak lub Nie w zależności od tego na jakiej grze nam zależy
+\item \textbf{Czy multiplayer:} pole powinno przyjmować wartości Tak lub Nie w zależności od tego na jakiej grze zależy użytkownikowi
 \item \textbf{Jaka platforma:} np. PC, XBOX One, XBOX Series X, PlayStation 4, Playstation 5, Google, Nintendo, VR, Steam
 \item \textbf{Minimum wiekowe:} pole określa wiek gry licząc datę teraźniejszą odjąć data wydania gry
 \item \textbf{Nazwa wydawcy:} np. Electronic Arts, Ubisoft, Nintendo, Rockstar Games
@@ -378,13 +356,13 @@ Użytkownik może wprowadzić 8 parametrów do wyszukiwania gry takich jak:
 \item \textbf{Motyw gry:} np: Apocalypse, Medieval, Space, Cyberpunk, Pirates, Western
 \end{itemize}
 Po wprowadzeniu parametrów w całości lub częściowo, użytkownik powinien kliknąć przycisk \textit{Znajdź grę}.
-Kod dla przycisku:
+Kod dla przycisku został przedstawiony w Listingu \ref{Kod przycisku Znajdź gry}.
 \begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Kod przycisku Znajdź gry}, label={Kod przycisku Znajdź gry}]
           <div class="button-container">
             <button class="btn btn-lg">Znajdź gry!</button>
           </div>
 \end{lstlisting}
-Obsługa po kliknięciu:
+Obsługa po kliknięciu przycisku jest widoczna na Listingu \ref{Metoda wywoływana pod wciśnięciu przycisku}.
 \begin{lstlisting}[language=C, mathescape, frame=single, numbers=left, xleftmargin=2em, framexleftmargin=2em, basicstyle=\ttfamily\bfseries, caption={Metoda wywoływana po wciśnięciu przycisku}, label={Metoda wywoływana po wciśnięciu przycisku}]
   submitGameForm():void {
     console.log(this.gameForm.value)
@@ -403,9 +381,9 @@ Obsługa po kliknięciu:
     );
   }
 \end{lstlisting}
-Po wciśnięciu przycisku aplikacja frontendowa, woła endpoint wystawiony z aplikacji backendowej wyszukując odpowiednie gry dla zadanych parametrów. To właśnie w tym momencie zapisujemy wynik mierzenia czasu pobierania danych z baz Oracle oraz Firebase. W przypadku braku gier, lista parametrów jest sukcesywnie skracana o kolejne parametry, aby znaleźć minimum 3 gry do wyświetlenia.
+Po wciśnięciu przycisku aplikacja frontendowa woła ścieżkę URL, na której został wystawiony z aplikacji backendowej controller wyszukujący odpowiednie gry dla zadanych parametrów. To właśnie w tym momencie zapisywany jest wynik mierzenia czasu pobierania danych z baz Oracle oraz Firebase. W przypadku braku gier, lista parametrów jest sukcesywnie skracana o kolejne parametry, aby znaleźć minimum 3 gry do wyświetlenia.
 
-Po znalezieniu gier użytkownik zostaje przeniesiony na drugą stronę, na której znajduje się karuzela z 3 grami dopasowanymi do jego preferencji oraz przyciski do potwierdzenia lub odrzucenia dopasowania tej gry:
+Po znalezieniu gier użytkownik zostaje przeniesiony na drugą stronę, na której znajduje się karuzela (panel przewijany) z 3 grami dopasowanymi do jego preferencji oraz przyciski do potwierdzenia lub odrzucenia dopasowania tej gry:
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\linewidth]{./img/secondpage.jpg}
